@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book</title>
+    <style>body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    
+    li {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    li a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    #menu {
+        position: relative;
+        cursor: pointer;
+    }
+    
+    h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .booksRow1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .booksRow1 img {
+        margin: 10px;
+    }
+    
+    .bookCaption {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .right {
+        float: right;
+    }
+    
+    a {
+        color: #000;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #ffffff00;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background-color: #ffffff00;
+    }
+    
+    footer {
+        background-color: #000;
+        width: 100%; /* Ширина на всю ширину экрана */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px; /* Добавлен отступ */
+        box-sizing: border-box; /* Учтено внутреннее содержимое и отступы в общей ширине */
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .booksRow1 img{
+        width: 363px;
+        height: 517px;
+    }
+    </style>
+</head>
+<body>
+
+<img id="menu" onclick="createMenu()" src="588a6507d06f6719692a2d15.png" alt="">
+
+<h3>Fantasy</h3>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<div class="booksRow1">
+    <div>
+        <img src="https://cv3.litres.ru/pub/c/cover_200/70021432.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽50</p>
+    </div>
+    <div>
+        <img class="center" src="https://www.rulit.me/data/programs/images/fantastika-2023-203-kompilyaciya-knigi-1-22-si_842133.jpg" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽150</p>
+    </div>
+    <div>
+        <img class="right" src="https://cv8.litres.ru/pub/c/cover_330/69300382.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽40</p>
+    </div>
+</div>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<h3>Science Fiction</h3>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<div class="booksRow1">
+    <div>
+        <img src="https://cv6.litres.ru/pub/c/cover_330/70285468.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽30</p>
+    </div>
+    <div>
+        <img class="center" src="https://cv8.litres.ru/pub/c/cover_330/68033986.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽79</p>
+    </div>
+    <div>
+        <img class="right" src="https://cv6.litres.ru/pub/c/cover_330/42600762.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽80</p>
+    </div>
+</div>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<h3>Dystopian Fiction</h3>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<div class="booksRow1">
+    <div>
+        <img src="https://cv2.litres.ru/pub/c/cover_330/68010821.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽120</p>
+    </div>
+    <div>
+        <img class="center" src="https://cv5.litres.ru/pub/c/cover_330/63576652.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽60</p>
+    </div>
+    <div>
+        <img class="right" src="https://cv7.litres.ru/pub/c/cover_330/4236675.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽120</p>
+    </div>
+</div>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<h3>Detective Fiction</h3>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<div class="booksRow1">
+    <div>
+        <img src="https://cv3.litres.ru/pub/c/cover_330/48496834.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽158</p>
+    </div>
+    <div>
+        <img class="center" src="https://cv5.litres.ru/pub/c/cover_330/62718058.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽62</p>
+    </div>
+    <div>
+        <img class="right" src="https://cv1.litres.ru/pub/c/cover_330/50390816.webp" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽28</p>
+    </div>
+</div>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<h3>Romance</h3>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+<div class="booksRow1">
+    <div>
+        <img src="https://knigolub.net/uploads/posts/2018-04/medium/1523899836_valentayn_kolebanie_serdtsa_lp.jpg" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽30</p>
+    </div>
+    <div>
+        <img class="center" src="https://knigolub.net/uploads/posts/2018-04/medium/1523616924_kelli_zhena_na_rozhdestvo_lp.jpg" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽30</p>
+    </div>
+    <div>
+        <img class="right" src="https://knigolub.net/uploads/posts/2018-04/medium/1523301786_riz_krugovorot_chuzhih_strastey.jpg" alt="">
+        <p class="bookCaption"><!--<a href="https://www.youtube.com/">Романы</a>|</-->₽50</p>
+    </div>
+</div>
+<p></p>
+<!--  -------------------------------------------------------------------------------  -->
+
+<footer>
+    <a href="Fantasy.html">Fantasy</a>
+    <a href="Science Fiction.html">Science Fiction</a>
+    <a href="Dystopian Fiction.html">Dystopian Fiction</a>
+    <a href="Detective Fiction.html">Detective Fiction</a>
+    <a href="Romance.html">Romance</a>
+    <a href="contact-about_us.html">contact|about us</a>
+</footer>
+
+
+<script>
+    function createMenu() {
+        var ul = document.createElement("ul");
+
+        var genres = ["Fantasy", "Science Fiction", "Dystopian Fiction", "Detective Fiction", "Romance"];
+        var websites = [
+            "Fantasy.html",
+            "Science Fiction.html",
+            "Dystopian Fiction.html",
+            "Detective Fiction.html",
+            "Romance.html"
+        ];
+
+        for (var i = 1; i <= genres.length; i++) {
+            var li = document.createElement("li");
+            li.id = "menu" + i;
+
+            var strong = document.createElement("strong");
+
+            var a = document.createElement("a");
+            a.href = websites[i - 1];
+            a.textContent = genres[i - 1];
+
+            strong.appendChild(a);
+            li.appendChild(strong);
+
+            ul.appendChild(li);
+        }
+
+        var liClose = document.createElement("li");
+        liClose.id = "menu" + (genres.length + 1);
+
+        var strongClose = document.createElement("strong");
+
+        var closeText = document.createElement("span");
+        closeText.textContent = "Закрыть";
+
+        strongClose.appendChild(closeText);
+        liClose.appendChild(strongClose);
+
+        liClose.onclick = function() {
+            ul.style.display = "none";
+        };
+
+        ul.appendChild(liClose);
+
+        var menuImg = document.getElementById("menu");
+        var rect = menuImg.getBoundingClientRect();
+
+        ul.style.top = rect.bottom + "px";
+        ul.style.left = rect.left + "px";
+
+        document.body.appendChild(ul);
+        ul.style.display = "block";
+    }
+</script>
+
+</body>
+</html>
