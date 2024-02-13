@@ -106,7 +106,7 @@
 
 <img id="menu" onclick="createMenu()" src="588a6507d06f6719692a2d15.png" alt="">
 
-<h3>Fantasy</h3>
+<h3 id="Fantasy">Fantasy</h3>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
 <div class="booksRow1">
@@ -125,7 +125,7 @@
 </div>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
-<h3>Science Fiction</h3>
+<h3 id="Science">Science Fiction</h3>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
 <div class="booksRow1">
@@ -144,7 +144,7 @@
 </div>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
-<h3>Dystopian Fiction</h3>
+<h3 id="Dystopian">Dystopian Fiction</h3>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
 <div class="booksRow1">
@@ -163,7 +163,7 @@
 </div>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
-<h3>Detective Fiction</h3>
+<h3 id="Detective">Detective Fiction</h3>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
 <div class="booksRow1">
@@ -182,7 +182,7 @@
 </div>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
-<h3>Romance</h3>
+<h3 id="Romance">Romance</h3>
 <p></p>
 <!--  -------------------------------------------------------------------------------  -->
 <div class="booksRow1">
@@ -267,6 +267,23 @@
         document.body.appendChild(ul);
         ul.style.display = "block";
     }
+
+
+    let one = document.querySelector('#Fantasy').addEventListener('click', function (params) {
+        window.location.href='Fantasy.html'
+    })
+    let two = document.querySelector('#Science').addEventListener('click', function (params) {
+        window.location.href='Science Fiction.html'
+    })
+    let three = document.querySelector('#Dystopian').addEventListener('click', function (params) {
+        window.location.href='Dystopian Fiction.html'
+    })
+    let four = document.querySelector('#Detective').addEventListener('click', function (params) {
+        window.location.href='Detective Fiction.html'
+    })
+    let five = document.querySelector('#Romance').addEventListener('click', function (params) {
+        window.location.href='Romance.html'
+    })
 </script>
 
 </body>
