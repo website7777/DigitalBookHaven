@@ -58,28 +58,7 @@
   })
 </script>
 <script>
-
-  function isIncognitoMode() {
-    return new Promise((resolve) => {
-        const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
-
-        if (!fs) {
-            resolve(false); // Не поддерживается в данном браузере
-        } else {
-            fs(window.TEMPORARY, 1, () => resolve(false), () => resolve(true));
-        }
-    });
-}
-
-// Использование
-isIncognitoMode().then((incognito) => {
-    if (incognito) {
-        alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито.");
-    } else {
-        alert("Вы не в режиме инкогнито.");
-    }
-});
-} 
+function isIncognitoMode() { return new Promise((resolve) => { try { const fs = window.RequestFileSystem || window.webkitRequestFileSystem; fs(window.TEMPORARY, 1, () => resolve(true), () => resolve(false)); } catch (error) { resolve(true); } }); } // Использование isIncognitoMode().then((incognito) => { if (incognito) { alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито."); } else { alert("Вы не в режиме инкогнито."); } });
 </script>
   
 </body>
