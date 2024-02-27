@@ -57,5 +57,13 @@
     window.location.href='register.html'
   })
 </script>
+<script>
+
+  if (window.sessionStorage.length === 0) {
+    // Инкогнито-режим
+    alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито.");
+} 
+</script>
+  
 </body>
 </html>
