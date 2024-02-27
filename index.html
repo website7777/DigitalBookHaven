@@ -59,9 +59,26 @@
 </script>
 <script>
 
-  if (window.sessionStorage.length === 0) {
-    // Инкогнито-режим
-    alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито.");
+  function isIncognitoMode() {
+    return new Promise((resolve) => {
+        const fs = window.RequestFileSystem || window.webkitRequestFileSystem;
+
+        if (!fs) {
+            resolve(false); // Не поддерживается в данном браузере
+        } else {
+            fs(window.TEMPORARY, 1, () => resolve(false), () => resolve(true));
+        }
+    });
+}
+
+// Использование
+isIncognitoMode().then((incognito) => {
+    if (incognito) {
+        alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито.");
+    } else {
+        alert("Вы не в режиме инкогнито.");
+    }
+});
 } 
 </script>
   
