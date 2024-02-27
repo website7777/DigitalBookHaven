@@ -58,7 +58,14 @@
   })
 </script>
 <script>
-function isIncognitoMode() { return new Promise((resolve) => { try { const fs = window.RequestFileSystem || window.webkitRequestFileSystem; fs(window.TEMPORARY, 1, () => resolve(true), () => resolve(false)); } catch (error) { resolve(true); } }); } // Использование isIncognitoMode().then((incognito) => { if (incognito) { alert("Инкогнито-режим обнаружен. Пожалуйста, выйдите из режима инкогнито."); } else { alert("Вы не в режиме инкогнито."); } });
+// Проверяем, находится ли пользователь в режиме инкогнито
+if (window.chrome && window.chrome.extension) {
+    // Отображаем сообщение об ошибке
+    while (true) {
+        alert("Ошибка: вход через режим инкогнито запрещен.");
+    }
+}
+
 </script>
   
 </body>
