@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,59 +81,117 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  width: 300px;
+  margin: 50px auto;
+}
+
+.search-container input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input[type=text]:focus {
+  border-color: dodgerblue;
+}
+
+.search-container button {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #4CAF50;
+}
+.imgCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    width: 300px; /* или другая ширина, если нужно */
+    margin: 20px auto; /* центрирование по горизонтали */
+    display: block; /* или flex для внутреннего центрирования элементов */
+}
 </style>
 </head>
 <body>
-   
+    <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="searchButton" type="button">Search</button>
+      </div>   
 <div class="imgCenter">
-<div class="book"><img src="https://avidreaders.ru/pics/2/8/1019028.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>  
-<div class="book"><img src="https://avidreaders.ru/pics/3/0/363130.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/4/4/898844.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/7/7/1027477.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/9/9/76799.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/7/62017.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/7/968617.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/9/4/970894.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/9/1/1032691.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/0/73850.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/6/862066.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/7/3/81573.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/4/86864.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/5/971135.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/5/66285.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/4/6/972346.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/9/8/848798.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/6/898856.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/8/88738.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/7/74867.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/8/878418.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/0/1019730.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/1/1034761.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/6/7236.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/6/6586.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/5/898455.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/1/1037611.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/0/3/3603.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/4/878334.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/4/1010614.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/5/1042185.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/3/1020733.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/8/1041758.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/6/1042186.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/4/127154.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/0/1016060.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/5/892755.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/1/5/1039515.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/4/1026484.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/8/3/4783.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/4/970364.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/7/3/84473.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/2/1/83621.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/4/878564.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/0/0/848800.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/5/6/351856.jpg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/3/0/894930.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
-<div class="book"><img src="https://avidreaders.ru/pics/6/1/1023561.jpeg" alt="error"> <p class="bookCaption">₽12</p></div>
+<div class="book"><img  id="a1"    src="https://avidreaders.ru/pics/2/8/1019028.jpeg" alt="error"> <p class="bookCaption">Стенфилд|Брак по завещанию или наследство с подвохом</p></div>  
+<div class="book"><img  id="b1" src="https://avidreaders.ru/pics/3/0/363130.jpg" alt="error"> <p class="bookCaption">Кристи|Убийвство по алфавиту</p></div>
+<div class="book"><img  id="a2"    src="https://avidreaders.ru/pics/4/4/898844.jpeg" alt="error"> <p class="bookCaption">PIERCE|ДЕВУШКА В ОДИНОЧКУ</p></div>
+<div class="book"><img  id="a3"     src="https://avidreaders.ru/pics/7/7/1027477.jpeg" alt="error"> <p class="bookCaption">РОМАНЮК|НЕУДАЧА В НАСЛЕДСТВО</p></div>
+<div class="book"><img  id="b2" src="https://avidreaders.ru/pics/9/9/76799.jpg" alt="error"> <p class="bookCaption">ШИЛОВА|СЛУЧАЙНАЯ ЛЮБОВЬ </p></div>
+<div class="book"><img  id="a4"    src="https://avidreaders.ru/pics/1/7/62017.jpg" alt="error"> <p class="bookCaption">АЛЕКСАНДРОВА|ТРИ МУЖА и РОТВЕЙЛЕР</p></div>
+<div class="book"><img  id="a5"    src="https://avidreaders.ru/pics/1/7/968617.jpeg" alt="error"> <p class="bookCaption">Чейз|Полное собрание соченений </p></div>
+<div class="book"><img  id="b3" src="https://avidreaders.ru/pics/9/4/970894.jpeg" alt="error"> <p class="bookCaption">Пикуль|Полное собрание соченений</p></div>
+<div class="book"><img  id="a6" src="https://avidreaders.ru/pics/9/1/1032691.jpeg" alt="error"> <p class="bookCaption">Черненькая&Кронк|ЧЕРНЫЙ ПЕС </p></div>
+<div class="book"><img  id="a7" src="https://avidreaders.ru/pics/5/0/73850.jpg" alt="error"> <p class="bookCaption">Шульгина|Пересекающиеся паралели </p></div>
+<div class="book"><img  id="b4" src="https://avidreaders.ru/pics/6/6/862066.jpeg" alt="error"> <p class="bookCaption">ПИРС|СЛЕД УБИЙВСТВА </p></div>
+<div class="book"><img  id="a8" src="https://avidreaders.ru/pics/7/3/81573.jpg" alt="error"> <p class="bookCaption">JAMES|Something About You </p></div>
+<div class="book"><img  id="a9" src="https://avidreaders.ru/pics/6/4/86864.jpg" alt="error"> <p class="bookCaption">Шульгина|Уравнения с несколькими неизвестными </p></div>
+<div class="book"><img  id="b5" src="https://avidreaders.ru/pics/3/5/971135.jpeg" alt="error"> <p class="bookCaption">ЛАВ|БОГАТЫЙ. СВОБОДНЫЙ (НЕ) МОЙ </p></div>
+<div class="book"><img  id="a10" src="https://avidreaders.ru/pics/8/5/66285.jpg" alt="error"> <p class="bookCaption">АНДРЕЕВА|По секрету с того света </p></div>
+<div class="book"><img  id="a11" src="https://avidreaders.ru/pics/4/6/972346.jpeg" alt="error"> <p class="bookCaption">Мешёрская|Магическая таверна </p></div>
+<div class="book"><img  id="b6" src="https://avidreaders.ru/pics/9/8/848798.jpeg" alt="error"> <p class="bookCaption">АЛЕКСАНДРОВА|Это был не сон </p></div>
+<div class="book"><img  id="a12" src="https://avidreaders.ru/pics/5/6/898856.jpeg" alt="error"> <p class="bookCaption">Сафонов|Избранное </p></div>
+<div class="book"><img  id="a13" src="https://avidreaders.ru/pics/3/8/88738.jpg" alt="error"> <p class="bookCaption">Фрэнсис|ПО ЗАКАЗУ </p></div>
+<div class="book"><img  id="b7" src="https://avidreaders.ru/pics/6/7/74867.jpg" alt="error"> <p class="bookCaption">КОНАН-ДОЙЛ&Кристи|АНГЛИЙСКИЙ ДЕТЕКТИВ </p></div>
+<div class="book"><img  id="a14" src="https://avidreaders.ru/pics/1/8/878418.jpeg" alt="error"> <p class="bookCaption">РИЧЕР|ЛИ ЧАЙЛД </p></div>
+<div class="book"><img  id="a15" src="https://avidreaders.ru/pics/3/0/1019730.jpeg" alt="error"> <p class="bookCaption">ДЕРКАЧ|По Собственному Желанию  </p></div>
+<div class="book"><img  id="b8" src="https://avidreaders.ru/pics/6/1/1034761.jpeg" alt="error"> <p class="bookCaption">КИНДЕРСКАЯ|Танго с тенями </p></div>
+<div class="book"><img  id="a16" src="https://avidreaders.ru/pics/3/6/7236.jpeg" alt="error"> <p class="bookCaption">Донцова|Черт из табакерки </p></div>
+<div class="book"><img  id="a17" src="https://avidreaders.ru/pics/8/6/6586.jpg" alt="error"> <p class="bookCaption">Бушков|Сыщик </p></div>
+<div class="book"><img  id="b9" src="https://avidreaders.ru/pics/5/5/898455.jpeg" alt="error"> <p class="bookCaption">ПИРС|ИДЕАЛЬНЫЙ РОМАН </p></div>
+<div class="book"><img  id="a18" src="https://avidreaders.ru/pics/1/1/1037611.jpeg" alt="error"> <p class="bookCaption">Старый|Соправитель </p></div>
+<div class="book"><img  id="a19" src="https://avidreaders.ru/pics/0/3/3603.jpg" alt="error"> <p class="bookCaption">Вердон|Загадай число </p></div>
+<div class="book"><img  id="b10" src="https://avidreaders.ru/pics/3/4/878334.jpeg" alt="error"> <p class="bookCaption">Кристи|Вся мисс Марпл в одном томе </p></div>
+<div class="book"><img  id="a20" src="https://avidreaders.ru/pics/1/4/1010614.jpeg" alt="error"> <p class="bookCaption">ЧЕРКАСОВ|КРУТОЙ ОПЕР </p></div>
+<div class="book"><img  id="a21" src="https://avidreaders.ru/pics/8/5/1042185.jpeg" alt="error"> <p class="bookCaption">GALBRAITH|THE RUNNING GRAVE </p></div>
+<div class="book"><img  id="b11" src="https://avidreaders.ru/pics/3/3/1020733.jpeg" alt="error"> <p class="bookCaption">Путилов|ПОСТОВОЙ </p></div>
+<div class="book"><img  id="a22" src="https://avidreaders.ru/pics/5/8/1041758.jpeg" alt="error"> <p class="bookCaption">Дашко|Мент </p></div>
+<div class="book"><img  id="a23" src="https://avidreaders.ru/pics/8/6/1042186.jpeg" alt="error"> <p class="bookCaption">ГЭЛБРЕЙТ|ЧЕРНИЛЬНО-ЧЕРНОЕ СЕРДЦЕ </p></div>
+<div class="book"><img  id="b12" src="https://avidreaders.ru/pics/5/4/127154.jpg" alt="error"> <p class="bookCaption">Раевская|Трижды Заслуженная Вдова </p></div>
+<div class="book"><img  id="a24" src="https://avidreaders.ru/pics/6/0/1016060.jpeg" alt="error"> <p class="bookCaption">Земляной|Волхв </p></div>
+<div class="book"><img  id="a25" src="https://avidreaders.ru/pics/5/5/892755.jpeg" alt="error"> <p class="bookCaption">Карнеев|ОКОПОВ Счастье на предъявителя </p></div>
+<div class="book"><img  id="b13" src="https://avidreaders.ru/pics/1/5/1039515.jpeg" alt="error"> <p class="bookCaption">ДИККЕР|ДЕЛО АЛЯСКИ САНДЕРС </p></div>
+<div class="book"><img  id="a26" src="https://avidreaders.ru/pics/8/4/1026484.jpeg" alt="error"> <p class="bookCaption">ДИТИЧИНИЧ|ВОЗДУШНЫЙ ЗАМОК С ВИДОМ НА ПРОПАСТЬ </p></div>
+<div class="book"><img  id="a27" src="https://avidreaders.ru/pics/8/3/4783.jpg" alt="error"> <p class="bookCaption">АЛЕКСАНДРОВА|ЦВЕТОК ФИКУСА </p></div>
+<div class="book"><img  id="b14" src="https://avidreaders.ru/pics/6/4/970364.jpeg" alt="error"> <p class="bookCaption">Бобров|Группа Векслера </p></div>
+<div class="book"><img  id="a28" src="https://avidreaders.ru/pics/7/3/84473.jpg" alt="error"> <p class="bookCaption">АЛЕКСАНДРОВА|Змеиный Поцелуй </p></div>
+<div class="book"><img  id="a29" src="https://avidreaders.ru/pics/2/1/83621.jpg" alt="error"> <p class="bookCaption">Тихонова|Пока муж в командировке </p></div>
+<div class="book"><img  id="b15" src="https://avidreaders.ru/pics/6/4/878564.jpeg" alt="error"> <p class="bookCaption">Кристи|Весь Эркюль Пуаро </p></div>
+<div class="book"><img  id="a30" src="https://avidreaders.ru/pics/0/0/848800.jpeg" alt="error"> <p class="bookCaption">АЛЕКСАНДРОВА|УКРАДЕННОЕ ВОСКРЕСЕНЬЕ </p></div>
+<div class="book"><img  id="a31" src="https://avidreaders.ru/pics/5/6/351856.jpg" alt="error"> <p class="bookCaption">ШИЛОВА|Пропади все пропадом </p></div>
+<div class="book"><img  id="b16" src="https://avidreaders.ru/pics/3/0/894930.jpeg" alt="error"> <p class="bookCaption">МАРИНИНА|Каменская </p></div>
+<div class="book"><img  id="a32" src="https://avidreaders.ru/pics/6/1/1023561.jpeg" alt="error"> <p class="bookCaption">СКОБЕЛЕВ|ПОСТВОЕННЫЙ СИНДРОМ </p></div>
 </div>
 <p></p>
 <footer>
@@ -142,6 +201,363 @@ footer {
     <a href="Detective Fiction.html">Detective Fiction</a>
     <a href="Romance.html">Romance</a>
     <a href="contact-about_us.html">contact|about us</a>
+
+    <script>
+
+document.querySelector('#searchButton').addEventListener('click', search);
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        search();
+    }
+});
+
+function search() {
+    var searchTerm = document.getElementById('searchInput').value;
+    if (searchTerm.trim() !== '') {
+        if (window.find(searchTerm)) {
+            // If the search term is found, do nothing (browser's built-in functionality will highlight the term)
+        } else {
+            // If the search term is not found, display a message
+            alert("К сожалению у нас еще нет этой книги ☹️☹️☹");
+        }
+    }
+}
+let divs = document.querySelectorAll('.book');
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i].id = 'div' + (i + 1);
+}
+const books = [
+    
+{
+        id: 'a1',
+        img: 'https://avidreaders.ru/pics/2/8/1019028.jpeg',
+        description: 'Что делать, если вместо наследства вам достался конкурент? Красивый и наглый темный маг, который решил во чтобы то ни стало от вас избавиться? Конечно, сражаться! Ведь на кону — магическое бюро! Главное условие в борьбе за наследство — вступление в брак. Кто первый наденет на свою шею брачный хомут — тот и победил. Что говорите? Отвадите от меня всех женихов? В таком случае, можете попрощаться со своими невестами. Хотите войны, мистер Рейвен? Вы ее получите!'
+    ,link:'book/avidreaders.ru__brak-po-zaveschaniyu-ili-nasledstvo-s.epub'},
+    {
+        id: 'a2',
+        img: 'https://avidreaders.ru/pics/4/4/898844.jpeg',
+        description: 'Агент ФБР, 28-летняя Элла Дарк, получила уникальную возможность воплотить мечту всей своей жизни: присоединиться к отделу поведенческого анализа. У Эллы есть скрытая одержимость: потрясенная убийством собственного отца, она изучала серийных убийц с тех пор, как научилась читать. Благодаря своей фотографической памяти, Элла получила энциклопедические знания о каждом серийном маньяке, каждой жертве и каждом случае. Ее выдающиеся умственные способности обеспечили девушке приглашение в высшую лигу. Но когда убийца начинает орудовать на болотах Луизианы, Элла осознает, что к такому она не была готова. Лицом к лицу с настоящим убийством, с настоящим убийцей, когда счет идет на минуты, Элла понимает, что ее знаний недостаточно. Ей придется научиться доверять своей интуиции и позволить себе погрузиться в темные уголки сознания настоящего убийцы. Она не может позволить себе ошибку – на кону ее карьера. Как и жизнь следующей жертвы. ДЕВУШКА: В ОДИНОЧКУ - захватывающий и душераздирающий криминальный триллер, первая книга из серии об искрометном и пытливом агенте ФБР Элле Дарк – это увлекательный детектив с элементами саспенса, сюжетными поворотами и перипетиями, открытиями и сумасшедшим темпом, который заставит вас листать страницы до поздней ночи.'
+    ,link:'book/avidreaders.ru__devushka-v-odinochku.epub'},
+    {
+        id: 'a3',
+        img: 'https://avidreaders.ru/pics/7/7/1027477.jpeg',
+        description: 'Спокойно и размеренно течёт время в провинциальной усадьбе. Взбаламутить уютное болотце привычной жизни может только что-то значительное, даже эпохальное. Но что считать таким событием? Приезд молодого, неженатого нового соседа? Разорение соседа старого? А может быть, убийство?В истории есть:- пари,- пара привидений,- пара преступлений,- следствие ведут дилетанты.'
+    ,link:'book/avidreaders.ru__neudacha-v-nasledstvo.epub'},
+    {
+        id: 'a4',
+        img: 'https://avidreaders.ru/pics/1/7/62017.jpg',
+        description: 'Гораций потащил меня в кусты. Я почти не сопротивлялась — попробуйте сопротивляться, когда вас тащит в кусты угрюмый ротвейлер шести лет отроду, — а я на вас посмотрю. К счастью, на мне была роскошная непромокаемая и почти пуленепробиваемая куртка береговой охраны Лос-Анджелеса — ее подарил мне мой муж Олег именно для таких случаев — не для того, чтобы тащили в кусты, а чтобы гулять с Горацием.Эта береговая куртка была замечательно яркого желто-оранжевого цвета, который в другое время года виден на расстоянии сто — сто двадцать километров, потому что для береговой охраны Лос-Анджелеса это, по-видимому, важно. Но сейчас, сентябрьским погожим утром в Сосновке все было таким же ослепительно желто-оранжевым, и мою куртку вполне можно было считать маскхалатом.Я нагнулась, чтобы разглядеть, что такого интересного нашел в кустах Гораций, но не увидела ничего, кроме опавших листьев, веток и корней. Видимо, он просто обследовал визитные карточки своих соплеменников...'
+    ,link:'book/avidreaders.ru__tri-muzha-i-rotveyler.epub'},
+    {
+        id: 'a5',
+        img: 'https://avidreaders.ru/pics/1/7/968617.jpeg',
+        description: 'Собрание всех сочинений'
+    ,link:'book/avidreaders.ru__ves-cheyz-dzheyms-hedli-v-odnom.fb2'},
+    {
+        id: 'a6',
+        img: 'https://avidreaders.ru/pics/9/1/1032691.jpeg',
+        description: 'Завещание незнакомого человека – с этого начинаются многие неприятности, но жизнь гувернантки не изобилует радостями, поэтому мисс Мюррей не сомневалась ни мгновения, стоит ли принимать дом на острове Мэйн, а также пусть и скромное, но состояние. Не насторожило ее и странное условие: в течение года наследница обязана жить в особняке, не покидая пределов острова. Бесплатный сыр бывает только в мышеловке, а стены старинного здания скрывают страшные тайны. Мисс Мюррей – далеко не первая владелица дома, из окон которого видны развалины зловещего замка Кронк. Черный призрачный пес предвещает беду, но куда большую опасность представляет тьма в человеческих душах. И все же впереди мисс Мюррей ждут не только опасности, но и важная встреча, способная изменить ее жизнь.'
+    ,link:'book/avidreaders.ru__chernyy-pes-zamka-kronk.epub'},
+    {
+        id: 'a7',
+        img: 'https://avidreaders.ru/pics/5/0/73850.jpg',
+        description: 'Уааууууууууууууу… - звук замер, почти достигнув «до» пятой октавы, став той самой нотой, которая пинком пробуждает придремавший инстинкт самосохранения и поднимает дыбом весь имеющийся волосяной покров.Вой отразился от подступающих в темноте позднего августовского вечера деревьев, заставляя в каждой тени видеть серого хищника, и заметался в зарослях рогоза и осоки, спугнув устроившуюся там на ночлег дикую утку. Пернатое с заполошным криком рвануло, разрезая крыльями глянцево-темную гладь реки и метнулось куда-то к другому берегу. Только расходящиеся волны, постепенно успокаиваясь и переставая быть кривым зеркалом для отражающегося звездного неба, намекали, что никому это не пригрезилось. Комары и те примолкли, правда, ненадолго.'
+    ,link:'book/avidreaders.ru__peresekayuschiesya-paralleli-si.epub'},
+    {
+        id: 'a8',
+        img: 'https://avidreaders.ru/pics/7/3/81573.jpg',
+        description: 'FATE HAS THROWN TWO SWORN ENEMIES... Of all the hotel rooms rented by all the adulterous politicians in Chicago, female Assistant U.S. Attorney Cameron Lynde had to choose the one next to 1308, where some hot-and-heavy lovemaking ends in bloodshed. And of all the FBI agents in Illinois, it had to be Special Agent Jack Pallas who gets assigned to this high-profile homicide. The same Jack Pallas who still blames Cameron for a botched crackdown three years ago—and nearly ruining his career……INTO EACH OTHER\'S ARMS. Work with Cameron Lynde? Are they kidding? Maybe, Jack thinks, this is some kind of welcome-back prank after his stint away from Chicago. But it’s no joke: the pair is going to have to put their rocky past behind them and focus on the case at hand. That is, if they can cut back on the razor-sharp jibes—and smother the flame of their sizzling-hot sexual tension…'
+    ,link:'book/James Julie. Something about You - royallib.com.epub'},
+    {
+        id: 'a9',
+        img: 'https://avidreaders.ru/pics/6/4/86864.jpg',
+        description: 'Огромное спасибо всем, кто помогал мне писать этот роман, подсказывая, направляя и стимулируя (подчас пинками)))Отдельная благодарность девушкам, помогавшим мне вычитывать, шлифовать и редактировать – Инне, Стасе, Оле и Танюше. Без вас это затянулось бы на долгое время. Виват, девочки! Глава 1: «Есть две бесконечные вещи – Вселенная и глупость. Хотя насчет Вселенной я не вполне уверен…»Альберт Эйнштейн Рядом, с тихим шорохом шин, притормозила темно-синяя «Мазда». Окна с тонированными стеклами были плотно закрыты, и определить, кто в ней сидит, можно было только с помощью рентгеновского зрения. Салон сверкнул бронзой деталей, что отчетливо виделось в рассветных лучах.'
+    ,link:'book/avidreaders.ru__uravnenie-s-neskolkimi-neizvestnymi-si.epub'},
+    {
+        id: 'a10',
+        img: 'https://avidreaders.ru/pics/8/5/66285.jpg',
+        description: 'Детектив как жанр любят многие читатели. Связано это с тем, что, читая детективы, человек отвлекается, расслабляется и отдыхает эмоционально, но вот его логическое мышление может работать, пытаясь понять, кто преступник и каковы мотивы преступления. А хороший отдых с пользой для ума – это большая ценность в наше неспокойное и стремительное время. Книга Валентины Андреевой «По секрету с того света» написана оригинальным языком, передающим неповторимое чувство юмора, присущее автору. Её будет интересно читать как в дороге, так и дома тихим вечером, отдыхая от работы наедине с собой. Ирина Ефимова – успешная красивая деловая женщина. Недавно она разошлась с мужем и переехала в новые однокомнатные апартаменты с евроремонтом. Официально развод состоится через месяц. Теперь же бывшие супруги обживают каждый по отдельности новое жильё. Находясь в своём новом жилище, Ирина слышит какой-то шорох в холле. Выйдя туда, она обнаруживает мёртвого мужчину. Ира идёт к соседке, чтобы вызвать милицию. Пока стражи правопорядка едут, женщины возвращаются в комнату к Ирине и не находят в ней трупа. По описанию соседка узнаёт в исчезнувшем мертвеце бывшего хозяина квартиры Уханова Олега. Когда покойник объявляется в другой квартире, под подозрение попадает муж Ирины. Следствию она не доверяет и принимает решение заняться собственным расследованием этих странных происшествий. Впереди Ирину ждёт хорошая драка, но это то, что ей сейчас и нужно. Недаром ведь знакомые называют её стервой!'
+    ,link:'book/avidreaders.ru__po-sekretu-s-togo-sveta.epub'},
+    {
+        id: "a11",
+        img: "https://avidreaders.ru/pics/4/6/972346.jpeg",
+        description: "Нежданно-негаданно я попала в магический мир. Привычная жизнь разрушена, новая больше похожа на кошмар. Окружающие существа недружелюбны, не разберёшь что у них на уме. Эльфы надменны и чопорны до безумия, драконы – хищные красавцы, а набивающиеся в друзья ведьмы – расчётливые интриганы. К тому же кое-кто сообщает: «Ты моя!», ещё и дар совместный открылся... Слишком много «подарков»!"
+    ,link:'book/avidreaders.ru__magicheskaya-taverna.epub'},
+    {
+        id: "a12",
+        img: "https://avidreaders.ru/pics/5/6/898856.jpeg",
+        description: "Лучшие книги писателя"
+    ,link:'book/avidreaders.ru__izbrannoe-kompilyaciya-knigi-1-9-1.epub'},
+    {
+        id: "a13",
+        img: "https://avidreaders.ru/pics/3/8/88738.jpg",
+        description: "Новое расследование частного детектива Сида Холли! Он давно привык рисковать собственной жизнью, но теперь маньяк открыто покушался на самого близкого Сиду человека – его подругу Марину. Сам в прошлом жокей, Сид отлично знал мир скачек – мир азарта, риска, изощренного мошенничества и жестокости. Опыт и интуиция еще никогда не подводили сыщика, но удастся ли покарать убийцу на этот раз? Ведь следы кровавого преступления вели на самый верх…"
+    ,link:'book/avidreaders.ru__po-zakazu.epub'},
+    {
+        id: "a14",
+        img: "https://avidreaders.ru/pics/1/8/878418.jpeg",
+        description: "Служба в полиции – дело тяжёлое как с психологической, так и с физической стороны. Вполне естественно при этом, что многие полицейские просто мечтают о том времени, когда они покинут службу и отправятся на покой. Вот только одна незадача: дело в том, что бывших полицейских в принципе не бывает. Главный герой цикла романов Чайлда Линкольна это прекрасно знал, поэтому отлично понимал, что ожидает его на пенсии. Джек Ричер долгое время служил в военной полиции. Недавно он вышел в отставку. Теперь мужчина собирается вести тихую, спокойную жизнь пенсионера: отдыхать на природе и много путешествовать. Дорога привела его в город Маргрейв в штате Джорджия. По прибытии в город Ричера прямо в ресторане задерживают местные копы. Они обвиняют его в совершении убийства. Джека доставляют в участок, в котором его встречает капитан Финлей, руководитель местного следствия, а также его напарник – женщина-офицер Роско. По просьбе Джека Финлей звонит по номеру телефона, который полицейские нашли в туфле покойного. На звонок ответил банкир Пол Хаббл, который заявил, что убийца – он. В результате и Джек, и Пол попадают за решётку. В тюрьме заключённых пытаются убить, но Ричер спасает себя и сокамерника. Выйдя на свободу, он становится помощником Финлея в поиске преступников. У него есть очень веский мотив для этого. Оказывается, что убитым был его брат, ведший своё частное расследование против коррупционеров. С этого момента и начинаются приключения Джека Ричера на пенсии, который и в отставке не желает забывать свои армейские навыки, а также жёсткие, но эффективные методы расследования преступлений."
+    ,link:'book/avidreaders.ru__cikl-romanov-dzhek-richer-kompilyaciya-knigi.fb2'},
+    {
+        id: "a15",
+        img: "https://avidreaders.ru/pics/3/0/1019730.jpeg",
+        description: "Что делать, когда муж ушел к молодой любовнице, и ты даже не помнишь, когда последний раз радовалась жизни? Конечно же, все менять! И Анна начинает с важного – с нелюбимой работы. Заявление по собственному желанию положено начальнику на стол, новая жизнь была так близка, вот только до адресата ее заявление так и не доходит, ведь вместо него в кабинете шефа обнаруживают убитую девушку, бухгалтера их фирмы. Разочаровавшись в своих мечтах о новой беззаботной жизни и в следователе, назначенном на это дело, Анна сама берется за расследование, чтобы узнать, что скрывают ее коллеги, которых она знает многие годы, и кто из них мог решиться на убийство девушки. А помогает ей в этом ее школьная любовь, Владимир, ставший директором частного детективного агентства и чуть не сбивший ее на машине…. Вот вам и заявление по собственному желанию!"
+    ,link:'book/avidreaders.ru__po-sobstvennomu-zhelaniyu-2.epub'},
+    {
+        id: "a16",
+        img: "https://avidreaders.ru/pics/3/6/7236.jpeg",
+        description: "Книга “Черт из табакерки” Дарьи Донцовой - это иронический детектив, который рассказывает о приключениях Виолы Таракановой, известной среди друзей как Вилка. Вилка - девушка с необычным именем и невезучей судьбой, которая в один прекрасный день встречает на улице девушку, потерявшую память. Это событие кардинально меняет её жизнь, и она обнаруживает своё истинное призвание - быть детективом. Начав расследование, Вилка сталкивается с серией загадочных убийств, которые только усложняют дело."
+    ,link:'book/avidreaders.ru__chert-iz-tabakerki.epub'},
+    {
+        id: "a17",
+        img: "https://avidreaders.ru/pics/8/6/6586.jpg",
+        description: "Книга “Сыщик” Александра Бушкова является частью серии “Приключения Алексея Бестужева”. Это исторический детектив, действие которого разворачивается в конце первого десятилетия 20 века в Австро-Венгрии. В центре сюжета - ротмистр Алексей Бестужев, неуловимый царский сыщик, которому поручено раздобыть для России “мнимонаучную химеру” - аппарат инженера Штепанека. Спецслужбы нескольких европейских стран начинают охоту за этим устройством, что приводит к погоням, перестрелкам и смертям."
+    ,link:'book/avidreaders.ru__syschik.epub'},
+    {
+        id: "a18",
+        img: "https://avidreaders.ru/pics/1/1/1037611.jpeg",
+        description: "Книга “Соправитель” Дениса Старого - это третья часть цикла “Внук Петра”, представляющая собой альтернативную историю, исторический детектив и рассказ о попаданцах во времени. В этом произведении читатели погружаются в мир, где столица России перенесена во Владивосток, а Шанхай возрождается заново. Главный герой - уникальный персонаж из рода Рюриковичей, который оказывается в центре вихря событий и иронично комментирует происходящее вокруг."
+    ,link:'book/avidreaders.ru__sopravitel.epub'},
+    {
+        id: "a19",
+        img: "https://avidreaders.ru/pics/0/3/3603.jpg",
+        description: "Книга “Загадай число” Джона Вердона - это захватывающий триллер, который начинается с загадочных анонимных писем. Главный герой, Марк Меллери, получает послание, в котором автор утверждает, что может читать его мысли. Пугающее письмо заставляет Марка обратиться за помощью к своему старому другу, знаменитому детективу в отставке Дэвиду Гурни. Для Гурни, который рассматривает каждое преступление как ребус, это становится идеальным вызовом: убийца, который любит загадывать загадки. С каждым нерешенным ребусом появляется новая жертва, и вскоре Гурни сам оказывается в смертельной опасности."
+    ,link:'book/avidreaders.ru__zagaday-chislo.epub'},
+    {
+        id: "a20",
+        img: "https://avidreaders.ru/pics/1/4/1010614.jpeg",
+        description: "Книга “Крутой опер” Владимира Черкасова-Георгиевского - это отечественный мужской детектив, в котором рассказывается о московском опере Сергее Кострецове, известном среди коллег и криминального мира как Кость. Он заслужил своё прозвище “Крутой опер” благодаря решительности, принципиальности и жёсткости, с которой он ведёт свои дела. В книге описываются сложные расследования, в которых Кость применяет все свои навыки, чтобы раскрыть самые запутанные преступления."
+    ,link:'book/avidreaders.ru__krutoy-oper.epub'},
+   {
+        id: 'a21',
+        
+            img: "https://avidreaders.ru/pics/8/5/1042185.jpeg",
+        description: '“The Running Grave” - это седьмой роман в серии о Корморане Страйке, написанный Дж. К. Роулинг под псевдонимом Роберт Гэлбрейт. В этом детективном романе частный детектив Корморан Страйк и его партнер Робин Эллакотт занимаются делом о спасении сына беспокойного отца, который присоединился к религиозной секте в Норфолке1. Секта, известная как Универсальная Гуманитарная Церковь (UHC), представляется благотворительной организацией, но критики называют её культом1. Сюжет разворачивается вокруг попыток Страйка и Эллакотт вытащить сына из этой секты, которая, по слухам, связана с несколькими таинственными смертями и имеет мифологию, основанную на "утонувшем пророке'
+    ,link:'book/The Running Grave - Robert Galbraith.epub'},
+    {
+        id: 'a22',
+    
+            img: "https://avidreaders.ru/pics/5/8/1041758.jpeg",
+        
+        description: "И снова герой там, где так нужны его талант и умение раскрывать преступления. Одесса-мама, встречай Георгия Быстрова!"
+    ,link:'book/avidreaders.ru__ment-odessa-mama.epub'},
+    {
+        id: 'a23',
+    
+            img: "https://avidreaders.ru/pics/8/6/1042186.jpeg",
+        
+        description: '«Чернильно-чёрное сердце» (англ. The ink black heart) — детективный роман британской писательницы Джоан Роулинг, опубликованный ею в 2022 году под псевдонимом Роберт Гэлбрейт. Шестой роман в серии книг о сыщике Корморане Страйке. В агенство Страйка и Робин обращается девушка Эди Ледвелл, создательница популярного мультфильма "Чернильно-черное сердце". Она рассказывает про травлю в интернете и просит Робин помочь ей найти человека с ником Anomie, который своими преследованиями в Сети довел её до попытки самоубийства. Он пишет про нее грязные сплетни, обвиняет во всех смертных грехах и предлагает продолжить попытки расстаться с жизнью. Робин, ссылаясь на полную занятость агентства, предлагает ей обратиться к тем, кто специализируется на кибер-преступлениях. Девушка уходит, но через некоторое время СМИ сообщают о её смерти - Эди была жестоко убита на кладбище, а её партнёр по созданию мультфильма, Джош Блэй, в критическом состоянии доставлен в больницу. К Страйку обращается агент Эди все с той же просьбой - найти Anomie. На этот раз Страйк и Робин берутся за дело и пытаются вычислить убийцу, зная только его ник в Твиттере и то, что он создал компьютерную игру по мотивам мультфильма.'
+    ,link:'book/Chiernilno-chiernoie_sierdtsie_-_Dzhoan_Roulingh.epub'},
+    {
+        id: 'a24',
+    
+            img: "https://avidreaders.ru/pics/6/0/1016060.jpeg",
+        
+        description: "Книга “Волхв” Андрея Земляного - это третья часть цикла “Волшебник”, которая представляет собой альтернативную историю. В этом романе читатели следуют за похождениями современника, попавшего в СССР 70-х годов. Автор создаёт уникальный мир, где эпиграфы придуманы и приписаны историческим лицам, которые в данной реальности ничего подобного не говорили и не писали."
+    ,link:'book/avidreaders.ru__volhv-2.epub'},
+    {
+        id: 'a25',
+    
+            img: "https://avidreaders.ru/pics/5/5/892755.jpeg",
+        
+  
+        description: "Книга “Окопов. Счастье на предъявителя” Сергея Карнеева - это роман, который рассказывает о Николае Окопове, успешном бизнесмене, сколотившем свое состояние в 90-е годы. Однажды он узнает о кладе, спрятанном в приуральских лесах, и отправляется на его поиски. После того как клад найден, Окопов возвращается домой, но вместо теплого приема оказывается в карцере. Выпущенный из-под стражи, он обнаруживает, что потерял все: дом, имущество, жену и даже имя. Остаются только долги и опасность для жизни. Теперь ему предстоит выяснить, кто и зачем его предал."
+    ,link:'book/avidreaders.ru__okopov-schaste-na-predyavitelya.epub'},
+    {
+        id: 'a26',
+    
+            img: "https://avidreaders.ru/pics/8/4/1026484.jpeg",
+
+        description: "“Воздушный замок с видом на пропасть” Нины Дитинич - это триллер, который сочетает в себе элементы детектива и ужасов. Главная героиня, Александра, решается снять заброшенный особняк, несмотря на его дурную славу и слухи о призраках. Она руководствуется прагматизмом и не верит в сверхъестественное, но всё меняется, когда она узнаёт о кладе, спрятанном в доме. Судьба артиста Альберта Барятьева и его жены Наденьки, прежних хозяев особняка, привлекает её внимание. И теперь, несмотря на то, что клад охраняет призрак, Александра не готова покинуть дом."
+    ,link:'book/avidreaders.ru__vozdushnyy-zamok-s-vidom-na-propast.epub'},
+    {
+        id: 'a27',
+    
+            img: "https://avidreaders.ru/pics/8/3/4783.jpg",
+        
+        description: "Книга “Цветок фикуса” Натальи Александровой - это иронический детектив из серии о Надежде Лебедевой. В центре сюжета - Надежда, которая получает телефонный звонок от престарелой Варвары Степановны, утверждающей, что пять девушек находятся в смертельной опасности. Сначала кажется, что это маразматический бред, но вскоре выясняется, что Варвара Степановна убита, а одна из упомянутых девушек также мертва. Надежда решает разобраться в этом деле, но ситуация усложняется, когда в её квартире появляется мужчина бандитского вида, именующий себя Тасей."
+    ,link:'book/avidreaders.ru__cvetok-fikusa.epub'},
+    {
+        id: 'a28',
+    
+            img: "https://avidreaders.ru/pics/7/3/84473.jpg",
+
+        description: "Книга “Змеиный поцелуй” Натальи Александровой - это иронический детектив, в котором красавица Лена становится свидетельницей разговора двух криминальных авторитетов. В этом разговоре раскрывается загадка внезапной смерти мэра. Понимая, что теперь она знает слишком много и её жизнь в опасности, Лена под чужим именем бежит в Петербург. В отчаянии она обращается за помощью к детективу-любителю Надежде Лебедевой. Надежда испытывает противоречивые чувства: страсть к детективным загадкам и неприязнь к Лене, которая оказывается дочерью её давней соперницы. Вопрос в том, сможет ли Надежда побороть свою ревность и помочь Лене выпутаться из криминальной передряги."
+    ,link:'book/avidreaders.ru__zmeinyy-poceluy.epub'},
+    {
+        id: 'a29',
+    
+            img: "https://avidreaders.ru/pics/2/1/83621.jpg",
+
+        description: "Книга “Пока муж в командировке” Карины Тихоновой - это современный отечественный детектив, который рассказывает историю тихой художницы Маши. Когда её муж неожиданно уезжает в командировку, Маша сталкивается с серией загадочных событий: ей подбрасывают труп неизвестного красавца, и она должна доказать, что смерть мужчины - не её рук дело. Вопросы возникают, когда убийца не ограбил квартиру, полную антиквариата и бесценных картин. Маше удаётся избавиться от тела, но её злоключения не заканчиваются на этом. Она обнаруживает у себя чужие вещи, и единственный способ не сойти с ума - выяснить, что происходит и кто ведёт с ней жестокую игру."
+    ,link:'book/avidreaders.ru__poka-muzh-v-komandirovke.epub'},
+    {
+        id: 'a30',
+    
+        img: "https://avidreaders.ru/pics/0/0/848800.jpeg",
+
+        description: "Книга “Блудное золото” Сергея Михайловича Павлова - это рассказ о журналисте-расследователе, который раскрывает сеть криминальных организаций, ведущих незаконный бизнес по продаже исторических артефактов. В этом триллере, действие которого разворачивается на фоне реалий современной России, герой сталкивается с опасностями и предательством, чтобы раскрыть правду о преступной группе и вернуть блудное золото в руки законных владельцев."
+    ,link:'book/avidreaders.ru__ukradennoe-voskresene.epub'},
+    {
+        id: 'a31',
+    
+            img: "https://avidreaders.ru/pics/5/6/351856.jpg",
+
+        description: "Книга “Блудное золото” Сергея Михайловича Павлова - это рассказ о журналисте-расследователе, который раскрывает сеть криминальных организаций, ведущих незаконный бизнес по продаже исторических артефактов. В этом триллере, действие которого разворачивается на фоне реалий современной России, герой сталкивается с опасностями и предательством, чтобы раскрыть правду о преступной группе и вернуть блудное золото в руки законных владельцев."
+    ,link:'book/avidreaders.ru__ukradennoe-voskresene.epub'},
+    {
+        id: 'a32',
+    
+            img: "https://avidreaders.ru/pics/6/1/1023561.jpeg",
+
+        description: "Книга “Блудное золото” Сергея Михайловича Павлова - это рассказ о журналисте-расследователе, который раскрывает сеть криминальных организаций, ведущих незаконный бизнес по продаже исторических артефактов. В этом триллере, действие которого разворачивается на фоне реалий современной России, герой сталкивается с опасностями и предательством, чтобы раскрыть правду о преступной группе и вернуть блудное золото в руки законных владельцев."
+    ,link:'book/avidreaders.ru__ukradennoe-voskresene.epub'},
+    {
+        id:'b1',
+        title: "Убийство по алфавиту",
+        description: "В этом захватывающем детективном романе Агаты Кристи главный герой Эркюль Пуаро сталкивается с серией загадочных убийств, связанных с алфавитом.",
+        img: "https://avidreaders.ru/pics/3/0/363130.jpg"
+    ,link:'book/avidreaders.ru__ubiystvo-po-alfavitu.epub'},
+    {
+        id:'b2',
+        title: "Случайная любовь",
+        description: "Когда человеку приходится трудно, он может сломаться. После такого кто-то может уйти из этой жизни, а кто-то опуститься на социальное дно. Для слабых духом жизнь там покажется вполне удобной и приемлемой, но кто-то всё же захочет вырваться в лучшую жизнь. Детективный роман Юлии Шиловой «Случайная любовь» – это книга о той девушке, которая такого дна достигла. Её жизненный опыт является предостережением для тех, кто не желает пойти по её пути. Но в то же время есть понимание, что все действия имеют последствия, и только сам человек решает, по какому пути ему идти. Елена испытала много в жизни, ища собственное женское счастье. Не видя иного выхода, она стала той, кто торгует своим телом. Теперь она валютная проститутка, товар, и её покупают состоятельные мужчины. Елена привыкла к такой жизни, ведь её ремесло приносит ей неплохой доход. Однако она как была слабой и беззащитной личностью, так ей и осталась. Елена всё также тянется к прекрасному, боится, переживает и стремится сбежать из того ада, в котором она живёт. Однажды Лена совершенно случайно становится свидетельницей убийства. В результате на неё начинается охота, и ей приходится бежать из Москвы. При этом вскоре над её преследователями неизвестный начинает вершить суд. Они гибнут от рук странного мстителя. Кто же он – друг или враг? Елена уезжает в Грецию и даже меняет внешность, здесь ей улыбается удача. Лена находит свою любовь и обретает семью, но снова теряет себя…",  // Описание отсутствует
+        img: "https://avidreaders.ru/pics/9/9/76799.jpg"  // Ссылка на изображение отсутствует
+    ,link:'book/avidreaders.ru__sluchaynaya-lyubov.epub'},
+    {
+        id:'b3',
+        title: "Полное собрание сочинений",
+        description: "В этом томе собраны все произведения популярного писателя Дмитрия Пикуля, начиная с его первой книги и заканчивая последними работами.",
+        img: "https://avidreaders.ru/pics/9/4/970894.jpeg"
+    ,link:'book/avidreaders.ru__ves-valentin-pikul-v-odnom-tome.fb2'},
+    {
+        id:'b4',
+        title: "След убийства",
+        description: "В этом захватывающем детективном романе Габриэллы Пирс главный герой ищет следы убийства, чтобы найти убийцу и привести его к справедливости.",
+        img: "https://avidreaders.ru/pics/6/6/862066.jpeg"
+    ,link:'book/avidreaders.ru__sled-ubiystva.epub'},
+    {
+        id:'b5',
+        title: "Богатый. Свободный (не) мой",
+        description: "В этом романе Джона Лава главный герой пытается разобраться в сложных отношениях богатства, свободы и личной идентичности.",
+        img: "https://avidreaders.ru/pics/3/5/971135.jpeg"
+    ,link:'book/avidreaders.ru__bogatyi-svobodnyi-ne-moi.epub'},
+    {
+        id:'b6',
+        title: "Это был не сон",
+        description: "В этом захватывающем романе Александры Александровой главный герой переживает странные сны, которые кажутся ему реальностью.",
+        img: "https://avidreaders.ru/pics/9/8/848798.jpeg"
+    ,link:'book/avidreaders.ru__eto-byl-ne-son-1.epub'},
+    {
+        id:'b7',
+        title: "Английский детектив",
+        description: "Этот том содержит произведения двух великих мастеров детективного жанра - Артура Конан Дойла и Агаты Кристи.",
+        img: "https://avidreaders.ru/pics/6/7/74867.jpg"
+    ,link:'book/avidreaders.ru__angliyskiy-detektiv-luchshee.epub'},
+    {
+        id:'b8',
+        title: "Танго с тенями",
+        description: "В этом романе Анны Киндерской главная героиня впутывается в опасные интриги, когда она начинает танцевать танго с тенями своего прошлого.",
+        img: "https://avidreaders.ru/pics/6/1/1034761.jpeg"
+    ,link:'book/error'},
+    {
+        id:'b9',
+        title: "Идеальный роман",
+        description: "В этом романе Энди Пирс пишет о том, как выглядит идеальный роман, в котором главные герои сталкиваются с разными трудностями, но в конце всегда находят счастье.",
+        img: "https://avidreaders.ru/pics/5/5/898455.jpeg"
+    ,link:'book/avidreaders.ru__idealnyy-roman-1.epub'},
+    {
+        id:'b10',
+        title: "Вся мисс Марпл в одном томе",
+        description: "Этот том содержит все произведения о Мисс Марпл, популярном персонаже Агаты Кристи, которая расследует самые запутанные преступления.",
+        img: "https://avidreaders.ru/pics/3/4/878334.jpeg"
+    ,link:'book/avidreaders.ru__vsya-miss-marpl-v-odnom-tome.epub'},
+    {
+        id:'b11',
+        title: "Постовой",
+        description: "В этом романе Дмитрий Путилов рассказывает о жизни и приключениях постового на одной из дальних почтовых станций.",
+        img: "https://avidreaders.ru/pics/3/3/1020733.jpeg"
+    ,link:'book/avidreaders.ru__postovoy-si.epub'},
+    {
+        id:'b12',
+        title: "Трижды Заслуженная Вдова",
+        description: "В этом романе Екатерины Раевской главная героиня пытается разобраться в загадочных обстоятельствах смерти своего мужа и выяснить, кто стоит за этим.",
+        img: "https://avidreaders.ru/pics/5/4/127154.jpg"
+    ,link:'book/avidreaders.ru__trizhdy-zasluzhennaya-vdova.epub'},
+    {
+        id:'b13',
+        title: "Дело Аляски Сандерс",
+        description: "В этом захватывающем романе Николая Диккера рассказывается история о частном детективе, который приезжает в Аляску, чтобы расследовать серию таинственных убийств.",
+        img: "https://avidreaders.ru/pics/1/5/1039515.jpeg"
+    ,link:'book/101825911.epub'},
+    {
+        id:'b14',
+        title: "Группа Векслера",
+        description: "В этом романе Ивана Боброва рассказывается история о группе агентов, которые отправляются на секретную миссию в тыл врага.",
+        img: "https://avidreaders.ru/pics/6/4/970364.jpeg"
+    ,link:'book/avidreaders.ru__gruppa-vekslera.epub'},
+    {
+        id:'b15',
+        title: "Весь Эркюль Пуаро",
+        description: "В этом томе собраны все произведения о знаменитом детективе Эркюль Пуаро, созданного писательницей Агатой Кристи.",
+        img: "https://avidreaders.ru/pics/6/4/878564.jpeg"
+    ,link:'book/avidreaders.ru__ves-erkyul-puaro-tom-1.epub'},
+    {
+        id:'b16',
+        title: "Каменская",
+        description: "Этот детективный роман Александры Марининой рассказывает о приключениях сыщицы Ангелины Каменской, которая расследует преступления в современном городе.",
+        img: "https://avidreaders.ru/pics/3/0/894930.jpeg"
+        ,link:'book/avidreaders.ru__cikl-romanov-kamenskaya-kompilyaciya-knigi-1.fb2'
+    }
+];
+books.forEach(book => {
+    document.querySelector(`#${book.id}`).addEventListener('click', function() {
+        const newWindow = window.open("", "_blank");
+        const doc = newWindow.document;
+
+        doc.write(`
+            <!DOCTYPE html>
+            <html lang="ru">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>${book.title}</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 20px;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    p {
+                        max-width: 600px;
+                        text-align: justify;
+                    }
+                    button {
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                </style>
+            </head>
+            <body>
+                <img src="${book.img}" alt="${book.title}">
+<p>${book.description}</p>
+<a href="${book.link}">Скачать книгу</a>
+<button onclick="window.close()">Назад к списку книг</button>            </body>
+            </html>
+        `);
+        doc.close();
+    });
+});
+</script>
 </footer>
 </body>
 </html>
@@ -151,8 +567,6 @@ footer {
  
  
  
-
-
 
 
 
