@@ -1,63 +1,78 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DigitalBookHaven</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    body{
-      background-color: #BFE2E3;
-    }
-    html{
-      overflow: hidden;
-    }
-    #center{
-      display: block;
-  margin: 0 auto;
-    }
-   
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 1240px;
+            height: 765px;
+        }
+        body {
+            background-color: #BFE1E2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Высота всего экрана */
+        }
+        .click{
+            width: 52px;
+            height: 30px;
+        }
+        .click{
+            color: #BFE1E2;
+            position: absolute;
+            left: 720px;
+            bottom: 7.5px;
+        }
+        .click{
+            opacity: 0;
+        }
+        #play{
+            position: absolute;
+          /*  left: 340px;*/
+            top: 990px;
+        }
+        .probel{
+            color: #BFE1E2;
+position: absolute;
+left: auto;
+top: 1530px;
+        }
+        .buy{
+   position: absolute;
+   top: 1320px;
+        }
+        .buy{
+            text-align: center;
+            width: 56px;
+            height: 35px;
+        }
+        a{
+            font-size: larger;
+            text-align: center;
+            width: 56px;
+            height: 35px;
+        }
+    </style>
 </head>
 <body>
- 
-<div class="content">
-  <img id="center" src="img_full.png" alt="">
-
-</div>
-<p></p>
-<!-- <div class=e10_7><span  class="e10_5">Books</span><span  class="e10_6">↓↓↓</span></div> -->
+<img src="work.png" alt=""> 
 <div class="click">hi</div>
-<style>
- .text{
-      text-align: center;
-    }
-    .text{
-      position: absolute;
-      bottom: 40px;
-      left: auto;
-
-
-}
-.click{
-  background-color: rgb(248, 248, 90);
-  position: absolute;
-  left: 714px;
-  top: 755px;
-  width: 51px;
-  height: 50px;
-  opacity: 0;
-}
-</style>
+<iframe id="play" width="560" height="315" src="https://www.youtube.com/embed/BFqshvexQoI?si=JNEMZFGCMgd3CR1_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="buy"><button><a href="1.png">Купить</a></button></div>
+<div class="probel">hi</div>
 
 <script>
-  document.querySelector('.click').addEventListener('click', function(){
-    window.location.href='https://boosty.to/digitalbookhaven'
-  })
+document.querySelector('.click').addEventListener('click', function(){
+    window.scrollTo(0, 990);
+})
 </script>
-
-  
 </body>
 </html>
