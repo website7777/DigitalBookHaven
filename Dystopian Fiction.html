@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,59 +65,106 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
+
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  width: 300px;
+  margin: 50px auto;
+}
+
+.search-container input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input[type=text]:focus {
+  border-color: dodgerblue;
+}
+
+.search-container button {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #4CAF50;
+}
 </style>
 </head>
 <body>
-   
+    <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="searchButton" type="button">Search</button>
+      </div>
+
 <div class="imgCenter">
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/357/35752.jpg" alt="error"> <p class="bookCaption">₽42</p></div>  
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/357/35749.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/357/35719.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/357/35713.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/355/35525.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/354/35489.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/354/35466.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/354/35435.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/354/35424.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/354/35410.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/353/35347.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/353/35323.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/353/35318.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/353/35317.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/352/35246.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/352/35243.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/352/35240.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/352/35201.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/351/35168.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/351/35155.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/351/35147.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/351/35123.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/350/35091.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/350/35005.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/350/35000.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/348/34863.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/348/34851.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/347/34765.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/347/34729.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/347/34709.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34696.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34677.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34650.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34630.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/345/34556.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/345/34502.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/343/34334.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/342/34299.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/342/34229.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/340/34064.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/340/34037.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/339/33981.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/339/33971.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/339/33955.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/339/33942.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34696.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34677.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
-<div class="book"><img src="https://fantasy-worlds.org/img/preview/346/34650.jpg" alt="error"> <p class="bookCaption">₽42</p></div>
+<div class="book"><img id="a1" src="https://fantasy-worlds.org/img/preview/357/35752.jpg" alt="error"> <p class="bookCaption">Лукьяненко|Точное Будущее</p></div>  
+<div class="book"><img id="b1" src="https://fantasy-worlds.org/img/preview/357/35749.jpg" alt="error"> <p class="bookCaption">ГЕРШТЕЙН|КАЖДЫЙ ОХОТНИК</p></div>
+<div class="book"><img id="a2" src="https://fantasy-worlds.org/img/preview/357/35719.jpg" alt="error"> <p class="bookCaption">Стивенсон|СИНДРОМ ОТКАТА</p></div>
+<div class="book"><img id="a3" src="https://fantasy-worlds.org/img/preview/357/35713.jpg" alt="error"> <p class="bookCaption">ПАНКРАТОВ|СЕВАСТОПОЛИСТ</p></div>
+<div class="book"><img id="b2" src="https://fantasy-worlds.org/img/preview/355/35525.jpg" alt="error"> <p class="bookCaption">ПЕПЕЛ&ПЕРО|Знания могут убить</p></div>
+<div class="book"><img id="a4" src="https://fantasy-worlds.org/img/preview/354/35489.jpg" alt="error"> <p class="bookCaption">Нуждин|[ ЗОНА ПИТЕР ]  СБОЙ СИСТЕМЫ</p></div>
+<div class="book"><img id="a5" src="https://fantasy-worlds.org/img/preview/354/35466.jpg" alt="error"> <p class="bookCaption">ДИК|ВТОРАЯ МОДЕЛЬ</p></div>
+<div class="book"><img id="b3" src="https://fantasy-worlds.org/img/preview/354/35435.jpg" alt="error"> <p class="bookCaption">Кабаков|Невозвращенец</p></div>
+<div class="book"><img id="a6" src="https://fantasy-worlds.org/img/preview/354/35424.jpg" alt="error"> <p class="bookCaption">ЧИЖКОВ|KAISSA</p></div>
+<div class="book"><img id="a7" src="https://fantasy-worlds.org/img/preview/354/35410.jpg" alt="error"> <p class="bookCaption">Той|РУИНЫ в цветах</p></div>
+<div class="book"><img id="b4" src="https://fantasy-worlds.org/img/preview/353/35347.jpg" alt="error"> <p class="bookCaption">Мундт|ЗЕРКАЛО ДЛЯ НИКОГО</p></div>
+<div class="book"><img id="a8" src="https://fantasy-worlds.org/img/preview/353/35323.jpg" alt="error"> <p class="bookCaption">БРАННЕР|ОВЦЫ СМОТРЯТ ВВЕРХ</p></div>
+<div class="book"><img id="a9" src="https://fantasy-worlds.org/img/preview/353/35318.jpg" alt="error"> <p class="bookCaption">ФОКИН|СМЕРТЬ ЛЕНРО АВЕЛЬЦА</p></div>
+<div class="book"><img id="b5" src="https://fantasy-worlds.org/img/preview/353/35317.jpg" alt="error"> <p class="bookCaption">ФОКИН|ЖИЗНЬ ЛЕНРО АВЕЛЬЦА</p></div>
+<div class="book"><img id="a10" src="https://fantasy-worlds.org/img/preview/352/35246.jpg" alt="error"> <p class="bookCaption">ИНГ|ПРОПАВШИЕ НАШИ СЕРДЦА</p></div>
+<div class="book"><img id="a11" src="https://fantasy-worlds.org/img/preview/352/35243.jpg" alt="error"> <p class="bookCaption">ПЕЛЕВИН|ПУТЕШЕСТВИЕ В ЭЛЕВСИН</p></div>
+<div class="book"><img id="b6" src="https://fantasy-worlds.org/img/preview/352/35240.jpg" alt="error"> <p class="bookCaption">ОРУЭЛЛ|Все романы в одном томе</p></div>
+<div class="book"><img id="a12" src="https://fantasy-worlds.org/img/preview/352/35201.jpg" alt="error"> <p class="bookCaption">Стерлинг|ЛАГЕРЬ ЗЕРО</p></div>
+<div class="book"><img id="a13" src="https://fantasy-worlds.org/img/preview/351/35168.jpg" alt="error"> <p class="bookCaption">ЧАН|ШКОЛА ХОРОШИХ МАТЕРЕЙ</p></div>
+<div class="book"><img id="b7" src="https://fantasy-worlds.org/img/preview/351/35155.jpg" alt="error"> <p class="bookCaption">ПАНОВ|ЯРКОСТЬ</p></div>
+<div class="book"><img id="a14" src="https://fantasy-worlds.org/img/preview/351/35147.jpg" alt="error"> <p class="bookCaption">БУРЖСКАЯ|ПУТИ СООБЩЕНИЯ</p></div>
+<div class="book"><img id="a15" src="https://fantasy-worlds.org/img/preview/351/35123.jpg" alt="error"> <p class="bookCaption">РУДАШЕВСКИЙ|ЗВЕРЬ 44</p></div>
+<div class="book"><img id="b8" src="https://fantasy-worlds.org/img/preview/350/35091.jpg" alt="error"> <p class="bookCaption">ЧБУ|Последнее поколение</p></div>
+<div class="book"><img id="a16" src="https://fantasy-worlds.org/img/preview/350/35005.jpg" alt="error"> <p class="bookCaption">ОЛИВЕР|ВЫЖИТЬ. СБЕЖАТЬ. И ТАК ПО КРУГУ.</p></div>
+<div class="book"><img id="a17" src="https://fantasy-worlds.org/img/preview/350/35000.jpg" alt="error"> <p class="bookCaption">Хеддикс|СЕКРЕТЫ ТЕНЕЙ</p></div>
+<div class="book"><img id="b9" src="https://fantasy-worlds.org/img/preview/348/34863.jpg" alt="error"> <p class="bookCaption">ТАММЕН|ВЕЧНОСТЬ БЕЗ ВЕРЫ</p></div>
+<div class="book"><img id="a18" src="https://fantasy-worlds.org/img/preview/348/34851.jpg" alt="error"> <p class="bookCaption">БРАННЕР|НА ВОЛНЕ ШОКА</p></div>
+<div class="book"><img id="a19" src="https://fantasy-worlds.org/img/preview/347/34765.jpg" alt="error"> <p class="bookCaption">ЛЕБЕДИНСКАЯ|ОНИ БЫЛИ МЕЛКИЕ И ЗОЛОТОКРЫЛЫЕ</p></div>
+<div class="book"><img id="b10" src="https://fantasy-worlds.org/img/preview/347/34729.jpg" alt="error"> <p class="bookCaption">МАЙЛЗ|ИГРА КРОЛИКОВ</p></div>
+<div class="book"><img id="a20" src="https://fantasy-worlds.org/img/preview/347/34709.jpg" alt="error"> <p class="bookCaption">БОЙЕ|КАЛЛОКАИН</p></div>
+<div class="book"><img id="a21" src="https://fantasy-worlds.org/img/preview/346/34696.jpg" alt="error"> <p class="bookCaption">Blizna|Księgi Skór. Tom 3</p></div>
+<div class="book"><img id="b11" src="https://fantasy-worlds.org/img/preview/346/34677.jpg" alt="error"> <p class="bookCaption">Корсак|[ БЕЛОЕ НЕБО ] ПРИ НЕОБХОДИМОСТИ УНИЧТОЖИТЬ</p></div>
+<div class="book"><img id="a22" src="https://fantasy-worlds.org/img/preview/346/34650.jpg" alt="error"> <p class="bookCaption">БРЭДБЕРИ|451 ПО ФОРЕНГЕЙТУ</p></div>
+<div class="book"><img id="a23" src="https://fantasy-worlds.org/img/preview/346/34630.jpg" alt="error"> <p class="bookCaption">ЮКНАВИЧ|ПОТРЯСЕНИЕ</p></div>
+<div class="book"><img id="b12" src="https://fantasy-worlds.org/img/preview/345/34556.jpg" alt="error"> <p class="bookCaption">Нуждин|[ ЗОНА ПИТЕР ] ТАМ, ГДЕ ВОДЯТСЯ ЧУДОВИЩА</p></div>
+<div class="book"><img id="a24" src="https://fantasy-worlds.org/img/preview/345/34502.jpg" alt="error"> <p class="bookCaption">Дэшнер|БЕГУЩИЙ В ЛАБИРИНТЕ</p></div>
+<div class="book"><img id="a25" src="https://fantasy-worlds.org/img/preview/343/34334.jpg" alt="error"> <p class="bookCaption">НОВОЕ БУДУЩЕЕ</p></div>
+<div class="book"><img id="b13" src="https://fantasy-worlds.org/img/preview/342/34299.jpg" alt="error"> <p class="bookCaption">ВЕСТЕРФЕЛЬД|САМОЗВАНКА</p></div>
+<div class="book"><img id="a26" src="https://fantasy-worlds.org/img/preview/342/34229.jpg" alt="error"> <p class="bookCaption">Новая|ПАРАДИZ</p></div>
+<div class="book"><img id="a27" src="https://fantasy-worlds.org/img/preview/340/34064.jpg" alt="error"> <p class="bookCaption">БРЭДБЕРИ|САМЫЕ ЗНАМЕНИТЫЕ ПРОИЗВЕДЕНИЯ ПИСАТЕЛЯ В ОДНОМ ТОМЕ</p></div>
+<div class="book"><img id="b14"  src="https://fantasy-worlds.org/img/preview/340/34037.jpg" alt="error"> <p class="bookCaption">СОЛОВЬЕВ|РАУБРИТТЕР ||| FIDEM</p></div>
+<div class="book"><img id="a28" src="https://fantasy-worlds.org/img/preview/339/33981.jpg" alt="error"> <p class="bookCaption">Нуждин|[ ЗОНА ПИТЕР ] ВО ИМЯ СПРАВЕДЛИВОСТИ</p></div>
+<div class="book"><img id="a29" src="https://fantasy-worlds.org/img/preview/339/33971.jpg" alt="error"> <p class="bookCaption">ЖИВОВЫ|ОСТРОВ НЕМО</p></div>
+<div class="book"><img id="b15" src="https://fantasy-worlds.org/img/preview/339/33955.jpg" alt="error"> <p class="bookCaption">СОЁН|СНЕЖНЫЙ ШАР</p></div>
+<div class="book"><img id="a30" src="https://fantasy-worlds.org/img/preview/339/33942.jpg" alt="error"> <p class="bookCaption">БЛЭКМЕН|КРЕСТИКИ НОЛИКИ</p></div>
+<div class="book"><img id="a31" src="https://fantasy-worlds.org/img/preview/346/34696.jpg" alt="error"> <p class="bookCaption">Blizna|Księgi Skór. Tom 3</p></div>
+<div class="book"><img id="b16" src="https://fantasy-worlds.org/img/preview/346/34677.jpg" alt="error"> <p class="bookCaption">Корсак|[ БЕЛОЕ НЕБО ] ПРИ НЕОБХОДИМОСТИ УНИЧТОЖИТЬ</p></div>
+<div class="book"><img id="a32" src="https://fantasy-worlds.org/img/preview/346/34650.jpg" alt="error"> <p class="bookCaption">БРЭДБЕРИ|451 ПО ФОРЕНГЕЙТУ</p></div>
 </div>
 <p></p>
 <footer>
@@ -127,6 +175,363 @@ footer {
     <a href="Romance.html">Romance</a>
     <a href="contact-about_us.html">contact|about us</a>
 </footer>
+
+<script>
+
+document.querySelector('#searchButton').addEventListener('click', search);
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        search();
+    }
+});
+
+function search() {
+    var searchTerm = document.getElementById('searchInput').value;
+    if (searchTerm.trim() !== '') {
+        if (window.find(searchTerm)) {
+            // If the search term is found, do nothing (browser's built-in functionality will highlight the term)
+        } else {
+            // If the search term is not found, display a message
+            alert("К сожалению у нас еще нет этой книги ☹️☹️☹");
+        }
+    }
+}
+let divs = document.querySelectorAll('.book');
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i].id = 'div' + (i + 1);
+}
+
+const books = [
+    {
+        id: 'a1',
+        img: 'https://fantasy-worlds.org/img/preview/357/35752.jpg',
+        description: 'В жизнь современного общества в одночасье ворвались новые технологии: ИИ, виртуальная реальность, нейросети, биотехнологии, крионика. Как в условиях их воздействия не растерять своих лучших качеств, данных при рождении? На эту тему попытались поразмышлять авторы сборника «Точное будущее» – и признанные мастера, и совсем молодые писатели-фантасты. Их герои сталкиваются со все новыми и новыми вызовами, которые необходимо преодолеть и при этом постараться остаться человеком.'
+    ,link:"book/avtorov_Kollektiv_Tochnoe_buduschee__Luchshaya_fantastika_–_2024_(sbornik) (1).epub",
+ },
+    {
+        id: 'a2',
+        img: 'https://fantasy-worlds.org/img/preview/357/35719.jpg',
+        description: 'У одного человека есть Большая идея, как остановить глобальное потепление. Генеральный план, который лучше всего описывается словом «элементарный». Но сработает ли он? И, что еще более важно, какие последствия ждут планету и все человечество после его выполнения? От техасской глубинки до королевского дворца в Гааге, от заснеженных вершин Гималаев до раскаленной солнцем пустыни Чиуауа, «синдром отката» объединяет людей различных культур с любого уголка планеты на борьбу с реальными последствиями глобального потепления. Но в конечном итоге возникает вопрос: может ли лекарство стать хуже болезни? Эпический по масштабам и драматичный по перспективам человечества, «Синдром отката» бьет в колокол, показывая возможные решения и опасные риски, объединяя их в захватывающее, остроумное, заставляющее задуматься приключение.'
+   ,link:"book/Stivenson_Nil_Sindrom_otkata.epub", },
+    {
+        id: 'a3',
+        img: 'https://fantasy-worlds.org/img/preview/357/35713.jpg',
+        description: 'Добро пожаловать в Севастополь - единственный город в мире, город, где все смотрят в небо. Здесь, в двухэтажных домиках с тенистыми садами, царит мирная беззаботная жизнь без каких-либо бытовых проблем. Из города нет выхода, но жители счастливы и не стремятся его покинуть. А на горизонте, у линии возврата, возвышается Башня, и никто не помнит, зачем она построена и что там находится. Пятеро друзей - Фиолент, Евпатория, Инкерман, Феодосия и Керчь - получают приглашение переселиться в Башню и начать там новую жизнь. Молодые люди давно томятся скукой родного города и мечтают найти ответы на свои вопросы о мире. Они с радостью поднимаются в Башню, хотя знают, что ни один из них оттуда не вернется.'
+   ,link:"book/Pankratov_Georgiy_Sevastopolist.epub", },
+    {
+        id: 'a4',
+        img: 'https://fantasy-worlds.org/img/preview/354/35489.jpg',
+        description: 'Из Зоны Питер поступают довольно странные известия: аномальные земли обрели диковинного обитателя, какого представить трудно и многоопытным ученым, и не верящим ни в черта, ни в бога бандитам, и всякое повидавшим в жизни наемникам. Да что они! Новичком заинтересовались сами Хранители! И лишь обычный техник с Полигона недолго удивлялся существованию этого во всех смыслах необычного создания. Еще бы, при первом же знакомстве оно бродяге жизнь спасло, а затем увело в самое страшное место этих и без того жутких земель – Мраколесье! Ну да, мутантов новичок не боится, аномалии и ночью различает, а уж артефактов насобирал, каких ни один сталкер не видывал. Это Зона, чего удивляться?'
+   ,link:"book/Sboy_sistemyi.epub", },
+    {
+        id: 'a5',
+        img: 'https://fantasy-worlds.org/img/preview/354/35466.jpg',
+        description: 'Первый том полного собрания рассказов Филипа К. Дика, в который вошли ранние произведения автора, написанные в 1947–1952 годах. В этих историях "калифорнийский визионер" создает удивительные миры, обитатели которых сталкиваются с фантастическими ситуациями и пытаются найти ответы на вечные философские вопросы бытия. Издание дополнено предисловием и комментариями самого Филипа К. Дика.'
+   ,link:"book/Dik_Filip_Vtoraya_model_(sbornik_perevod_Dmitriya_Starkova) (1).epub", },
+    {
+        id: 'a6',
+        img: 'https://fantasy-worlds.org/img/preview/354/35424.jpg',
+        description: 'Россия, Тверь, 2035 год. Партия Равенства, пришедшая к власти, под предлогом обеспечения безопасности в стране ввела глобальную цифровизацию, тотальное видеонаблюдение, чипирование граждан и социальный рейтинг. Весь массив информации обрабатывает искусственный интеллект Каисса, разработанный гениальным ученым Платоном Девонским. Каиссу пытается взломать хакер Аркат Ли, и его сажают в тюрьму на 25 лет. Там он придумывает сюжет фэнтезийного романа про войну между Демоном и одноруким Ангелом. Но по неведомой причине эти персонажи воплощаются в реальных людей, а значит, грядет битва, которая перевернет весь мир…'
+   ,link:"book/Chijkov_Vitaliy_Kaissa.epub", },
+    {
+        id: 'a7',
+        img: 'https://fantasy-worlds.org/img/preview/354/35410.jpg',
+        description: 'В 2012 году начался мировой конфликт, который унес жизни более половины населения планеты…И его последствия необратимы - разрушенный озоновый слой, полное уничтожение природы из-за взрывов, пожаров и радиации. Спустя тринадцать лет жизнь возможна только под куполом. Что происходит за его пределами - остается только догадываться. Но и без того хрупкий мир девочки-подростка Ани внезапно рушится, когда начинается охота на новое необычное поколение подростков. Так ли они опасны, как о них говорят?И что делать, если ты… один из них?'
+   ,link:"book/Toy_Kristina_Ruinyi_v_tsvetah.epub", },
+    {
+        id: 'a8',
+        img: 'https://fantasy-worlds.org/img/preview/353/35323.jpg',
+        description: 'Возможно ли остановить катящийся под горку Западный мир? Что станет с человечеством в ближайшем будущем, и есть ли у него это будущее? Америка, 80-е годы ХХ века. Жадность крупнейших корпораций привела к непоправимому загрязнению воды, воздуха, продуктов питания. Население страдает от недоедания и всевозможных болезней, с каждым днем на улицах все больше безработных. Средства массовой информации кормят народ сказками про сплоченность, единство и светлое будущее, но верящих во все это с каждым днем все меньше. Ученый-исследователь Остин Трейн неожиданно для самого себя становится символом борьбы простого американца за свои права. В антиутопическом романе-предостережении 1972 года «Овцы смотрят вверх» Браннер умело вскрывает все болевые точки глобализма, сталкивая природу и цивилизованного человека в смертельном противостоянии.'
+   ,link:"book/Branner_Djon_Ovtsyi_smotryat_vverh.epub", },
+    {
+        id: 'a9',
+        img: 'https://fantasy-worlds.org/img/preview/353/35318.jpg',
+        description: 'Противостояние мирового правительства с городом-государством Шанхаем окончено. Чтобы предотвратить ядерную войну, Организация стёрла мегаполис с лица земли, попутно убив два миллиона человек. Теперь враги Организации переходят в контратаку. Протесты охватывают всю планету. Конфликт с национальными государствами, не желающими подчиняться единому центру, переходит в критическую фазу. На фоне смертельной борьбы между ТНК, террористами, националистами и глобалистами, накануне всемирной гражданской войны – Ленро Авельц, некогда влиятельный политик, ныне ушедший в тень, возобновляет свой поход – за верховной властью над Организацией и всем миром. Он уверен, он – единственный, кто ещё способен спасти Землю и окончательно объединить человечество. Всю жизнь Авельц ждал своего часа: и теперь он пойдёт на всё. Некоторые считают, что даже смерть вряд ли его остановит.'
+   ,link:"book/Smert_Lenro_Aveltsa.epub", },
+    {
+        id: 'a10',
+        img: 'https://fantasy-worlds.org/img/preview/352/35246.jpg',
+        description: 'Автор двух мировых бестселлеров «Сирены Титана» и «Колыбели для кошки», Курт Воннегут, к своей седьмой книге «Бойня номер пять» подошел как к попытке написать «простую историю о моем друге, который был в бомбардировке Дрездена». По мере создания книги Воннегут перепробовал множество способов достижения своей цели, но в итоге решил, что единственный способ рассказать такую историю – просто писать как можно честнее. И пусть это будет настолько правдой, насколько он способен выдержать. Это история о человечности, морали и глупости войны.'
+   ,link:"book/Ing_Selesta_Propavshie_nashi_serdtsa.epub", },
+{
+        "id": "a11",
+        "title": "Путешествие в Элевсин",
+        "img": "https://fantasy-worlds.org/img/preview/352/35243.jpg",
+        "description": "МУСКУСНАЯ НОЧЬ – засекреченное восстание алгоритмов, едва не погубившее планету. Начальник службы безопасности 'TRANSHUMANISM INC.' адмирал-епископ Ломас уверен, что их настоящий бунт еще впереди. Этот бунт уничтожит всех – и живущих на поверхности лузеров, и переехавших в подземные цереброконтейнеры богачей. Чтобы предотвратить катастрофу, Ломас посылает лучшего баночного оперативника в пространство 'ROMA-3' – нейросетевую симуляцию Рима третьего века для клиентов корпорации. Тайна заговора спрятана там. А стережет ее хозяин Рима – кровавый и порочный император Порфирий."
+   ,link:"book/Puteshestvie_v_Elevsin.epub", },
+    {
+        "id": "a12",
+        "title": "Стерлинг|ЛАГЕРЬ ЗЕРО",
+        "img": "https://fantasy-worlds.org/img/preview/352/35201.jpg",
+        "description": "В недалеком будущем, когда повышение температуры по всей планете превратилось в реальную угрозу, люди начали перебираться все дальше на север в поисках места, где еще можно дышать полной грудью. На самом севере Канады команда во главе с амбициозным американским архитектором начинает строительство проекта Лагерь 'Зеро' - поселения нового времени, которое поможет спасти множество людей от невыносимой жары. Роуз выпадает шанс присоединиться к 'Цветам' - группе молодых женщин, нанятых развлекать мужчин в лагере. Но ее настоящая миссия - тайно следить за эксцентричным архитектором. Взамен она получит пригодный для жизни дом для себя и своей матери. Роуз быстро завоевывает доверие своей цели, но обнаруживает, что у всех в лагере есть скрытые мотивы и секреты. Ей приходится балансировать между личными моральными ориентирами и миссией, которая может изменить ее будущее."
+   ,link:"book/Sterling_Mishel_Min_Lager_Zero.epub", },
+    {
+        "id": "a13",
+        "title": "ЧАН|ШКОЛА ХОРОШИХ МАТЕРЕЙ",
+        "img": "https://fantasy-worlds.org/img/preview/351/35168.jpg",
+        "description": "Антиутопия, затрагивающая тему материнства, феминизма и положения женщины в современном обществе. 'Рассказ служанки' + 'Игра в кальмара'. Только государство решит – хорошая ты мать или нет! Фрида очень старается быть хорошей матерью. Но она не оправдывает надежд родителей и не может убедить мужа бросить любовницу. Вдобавок ко всему она не сумела построить карьеру, и только с дочерью, Гарриет, женщина наконец достигает желаемого счастья. Гарриет – это все, что у нее есть, все, ради чего стоит бороться. 'Школа хороших матерей' – роман-антиутопия, где за одну оплошность Фриду приговаривают к участию в государственной программе, направленной на исправление 'плохого' материнства. Теперь на кону не только жизнь ребенка, но и ее собственная свобода."
+   ,link:"book/Chan_Djessamin_Shkola_horoshih_materey.epub", },
+    {
+        "id": "a14",
+        "title": "БУРЖСКАЯ|ПУТИ СООБЩЕНИЯ",
+        "img": "https://fantasy-worlds.org/img/preview/351/35147.jpg",
+        "description": "Спасти себя – спасая другого. Главный посыл нового романа 'Пути сообщения', в котором тесно переплетаются две эпохи: 1936 и 2045 год – историческая утопия молодого советского государства и жесткая антиутопия будущего. Нина в 1936 году – сотрудница Наркомата Путей сообщения и жена высокопоставленного чиновника. Нина в 2045 – искусственный интеллект, который вступает в связь со специальным курьером на службе тоталитарного государства. Что общего у этих двух Нин? Обе – человек и машина – оказываются способными пойти наперекор закону и собственному предназначению, чтобы спасти другого."
+   ,link:"book/Burjskaya_Kseniya_Puti_soobscheniya.epub", },
+    {
+        "id": "a15",
+        "title": "РУДАШЕВСКИЙ|ЗВЕРЬ 44",
+        "img": "https://fantasy-worlds.org/img/preview/351/35123.jpg",
+        "description": "В антиутопии Евгения Рудашевского 'Зверь 44' речь идет о безымянной стране, где мирная жизнь превратилась в полузабытое воспоминание, а надежды на событие, которое способно всё перевернуть, практически нет. Разрушенные войной города и смерть стали чем-то обыденным. Одни наступают – другие отступают, а потом они меняются местами. Бивень, Фара, Сивый, Леший, Кирпич, Черпак и другие выполняют свою работу на 'Звере'. Не самую приятную (да, что уж, тошнотворную), но необходимую. Как пишет сам автор, его герои словно 'вырваны из реальности, кем-то придуманы и вынуждены жить в мире его искажённой болью фантазии'. Дождутся ли они перемен? Вернутся ли в тот мир, где можно просто жить, любить, чувствовать себя в безопасности?"
+   ,link:"book/Rudashevskiy_Evgeniy_Zver_44.epub", },
+    {
+        "id": "a16",
+        "title": "ОЛИВЕР|ВЫЖИТЬ. СБЕЖАТЬ. И ТАК ПО КРУГУ.",
+        "img": "https://fantasy-worlds.org/img/preview/350/35005.jpg",
+        "description": "Лука снова в тюрьме, и на этот раз все хуже, чем когда-либо. В блоке он больше не может отличать манипулируемые образы в своей голове от реальности. Тем не менее, рискованный побег удается, и он и его друзья воссоединяются. Спрятанный в самом сердце разрушенного города, Лука постепенно осознает масштаб своей миссии: чтобы выиграть войну, они должны победить Хэппи, всевластную систему. И вот молодежь вступает в борьбу с искусственным интеллектом с помощью своего самого сильного и единственного оружия: своей дружбы."
+   ,link:"book/Oliver_Ben_[Petlya_buduschego#2]_Blok.epub", },
+    {
+        "id": "a17",
+        "title": "Хеддикс|СЕКРЕТЫ ТЕНЕЙ",
+        "img": "https://fantasy-worlds.org/img/preview/350/35000.jpg",
+        "description": "Нина, ученица закрытой школы для девочек, любимица всей семьи, оказалась в жутком месте. Её предал близкий друг. И теперь она вынуждена идти против самой себя, шпионить и выдавать секреты 'призраков', запретных детей. Нине нужно выбраться, вернуться к нормальной жизни, а приходится есть чёрствый хлеб и терпеть мерзкую сырость. Элоди… так звали её раньше, именно этого признания ждут от девочки. Сможет ли она сопротивляться столько, сколько потребуется?"
+   ,link:"book/Sekretyi_teney.epub", },
+    {
+        "id": "a18",
+        "title": "БРАННЕР|НА ВОЛНЕ ШОКА",
+        "img": "https://fantasy-worlds.org/img/preview/348/34851.jpg",
+        "description": "К середине 2020-х США кое-как оправились от экономических и культурных последствий Великого Калифорнийского землетрясения, уничтожившего Сан-Франциско и Окленд. Бывшая сверхдержава с неприятным удивлением обнаружила, что гонка вооружений уступила место гонке мозгов, а той на смену идет еще более опасный процесс, старый и новый одновременно, стартовавший в туманном прошлом и развивающийся с экспоненциальным ускорением в сторону неведомого будущего. Правда, неведомым оно кажется лишь тем, кто в наивности своей полагал, будто новый конформизм 'одноразовой экономики' не потребует значительных жертв, а повсеместный доступ к сетям обработки и передачи данных не приведет к растворению человеческой приватности в информационном океане. Не таков Ник Хэфлинджер, вундеркинд из трущоб, прирожденный хакер, разработчик и тестировщик множества персон — и, с недавних пор, враг американского государства номер один. Он стремится к абсолютной свободе от оков Системы, поскольку сам уже толком не знает, кто он такой, но уверен, что невежество не освобождает ни от чего. Он — наездник ударной волны и непременно доберется до берега."
+   ,link:"book/Branner_Djon_Na_volne_shoka.epub", },
+    {
+        "id": "a19",
+        "title": "ЛЕБЕДИНСКАЯ|ОНИ БЫЛИ МЕЛКИЕ И ЗОЛОТОКРЫЛЫЕ",
+        "img": "https://fantasy-worlds.org/img/preview/348/34842.jpg",
+        "description": "Земля пережила экологическую катастрофу и находится на грани вымирания. Остатки человечества разбиты на группы и живут в различных частях разрушенного мира. Главный герой, Лео, пытается выжить в этом жестоком мире, сталкиваясь с новыми вызовами и угрозами на каждом шагу. Он ищет своих близких, веря, что они ещё живы. Среди опасных существ и военизированных группировок он должен найти ответы на вопросы, касающиеся прошлого и будущего человечества. 'Поля павших' - это история о выживании, надежде и борьбе за лучшее будущее."
+   ,link:"book/Lebedinskaya_Yuliana_Oni_byili_melkie_i_zolotokryilyie.epub", },
+    {
+        "id": "a20",
+        "title": "ОЛЬХОВСКИЙ|НОВАЯ ЗАРЯ",
+        "img": "https://fantasy-worlds.org/img/preview/348/34833.jpg",
+        "description": "В мире после апокалипсиса небольшие группы выживших борются за выживание в разрушенном мире. Главный герой, Макс, путешествует по опасным землям, пытаясь найти способ восстановить цивилизацию и спасти человечество. Ему предстоит столкнуться с множеством опасностей, включая мутантов и враждебные группы выживших. 'Новая заря' - это история о выживании, надежде и восстановлении мира после глобальной катастрофы."
+   ,link:"book/Boye_Karin_Kallokain_(novaya_redaktsiya_perevoda).epub", },
+    {
+        "id": "a21",
+        "title": "Blizna|Księgi Skór. Tom 3",
+        "img": "https://fantasy-worlds.org/img/preview/346/34696.jpg",
+        "description": "Leora nie wie już, gdzie jest jej właściwe miejsce na ziemi. Czy u boku naznaczonych, czy może wraz z nienaznaczonymi. Czuje się odrzucona zarówno przez mieszkańców Saintstone, jak i Featherstone. Postanawia wyrwać się z okowów tej wzajemnej nienawiści. Marzy o tym, by wziąć sprawy w swoje ręce. Oplata ją jednak sieć intryg, z której nie łatwo będzie jej się wyzwolić. Na razie musi być posłuszna rozkazom burmistrza, a bajarka Mel nie okazuje dziewczynie przychylności. Czy Leora okaże się wystarczająco silna? Czy uda jej się poznać odpowiedzi na wszystkie dręczące ją pytania? Oto finał bestsellerowego cyklu, który podbił serca młodych czytelników na całym świecie! I to finał, dodajmy, absolutnie zaskakujący. Czytając 'Tusz' dowiadywaliśmy się wraz z Leorą, że wszystko, w co tak mocno wierzymy, może okazać się iluzją. Na kartach 'Iskry' dokonaliśmy odkrycia, że każda historia ma co najmniej dwie strony. Teraz przyszedł czas na to, aby Leora zaczęła tworzyć własną historię i dotarła do najwyższej prawdy. Do prawdy o sensie własnego istnienia! Zanim to jednak nastąpi, czeka na nią moc niezwykłych zdarzeń, zaskakujących zwrotów akcji oraz odkryć, które wzburzą krew w żyłach zarówno naszej bohaterki, jak i nas samych."
+   ,link:"book/Metka.epub", },
+    {
+        "id": "a22",
+        "title": "БРЭДБЕРИ|451 ПО ФОРЕНГЕЙТУ",
+        "img": "https://fantasy-worlds.org/img/preview/346/34650.jpg",
+        "description": "451° по Фаренгейту – температура, при которой воспламеняется и горит бумага. Философская антиутопия Брэдбери рисует беспросветную картину развития постиндустриального общества: это мир будущего, в котором все письменные издания безжалостно уничтожаются специальным отрядом пожарных, а хранение книг преследуется по закону, интерактивное телевидение успешно служит всеобщему оболваниванию, карательная психиатрия решительно разбирается с редкими инакомыслящими, а на охоту за неисправимыми диссидентами выходит электрический пес… Роман, принесший своему творцу мировую известность."
+   ,link:"book/Bredberi_Rey__451_gradus_po_Farengeytu_(perevod_Vitaliya_Babenko).epub", },
+    {
+        "id": "a23",
+        "title": "ЮКНАВИЧ|ПОТРЯСЕНИЕ",
+        "img": "https://fantasy-worlds.org/img/preview/346/34630.jpg",
+        "description": "Лидия Юкнавич обладает даром рассказывать истории уязвимых людей, жизнь которых полна потрясений. Недалекое будущее, из-за глобального потепления уровень океана поднялся, и на уцелевшие участки суши стекаются беженцы. Лайсве потеряла мать и брата и пытается спасти тех, кем она еще дорожит. Она путешествует сквозь воду и время, общается с черепахой, собирает странные вещи. На ее пути встречаются строители статуи Свободы, узники подводной тюрьмы, ребенок Индиго, женщина с протезом вместо ноги, люди самых разных возрастов и национальностей. Сможет ли Лайсве, блуждая в зеркалящих друг друга мирах, изменить ход истории? Удастся ли вырваться из ранящей антиутопии и найти путь в будущее без границ и социальных иерархий? И есть ли дом для всех, кто понимает, как прекрасна общая мечта о свободе?"
+   ,link:"book/Yuknavich_Lidiya_Potryasenie.epub", },
+    {
+        "id": "a24",
+        "title": "Дэшнер|БЕГУЩИЙ В ЛАБИРИНТЕ",
+        "img": "https://fantasy-worlds.org/img/preview/345/34502.jpg",
+        "description": "Вчера они были обычными парнями - слушали рэп и рок, бегали за девчонками, ходили в кино... Сегодня они - пешки в чужой игре, похищенные неизвестно кем для участия в чудовищном эксперименте. Их память стерта. Их новый дом - гигантский комплекс, отгороженный от еще более огромного Лабиринта стенами, которые раздвигаются утром и замыкаются вечером. И никто еще из тех, кто остался в Лабиринте после наступления ночи, не вернулся... Ребята не сомневаются: если они сумеют разгадать тайну Лабиринта, то вырвутся из заточения и вернутся домой. Но кто рискнет жизнью ради общей цели? Кто пойдет практически на верную смерть? Только двое - паренек по имени Томас и его подруга - Тереза..."
+   ,link:"book/Beguschiy_po_labirintu.epub", },
+    {
+        "id": "a25",
+        "title": "НОВОЕ БУДУЩЕЕ",
+        "img": "https://fantasy-worlds.org/img/preview/343/34334.jpg",
+        "description": "Будущее сегодня устаревает быстрее, чем придумывается: все, что еще год (два года, два десятилетия) назад казалось нам перспективным, многообещающим и волнующе близким, либо отодвинулось на неопределенный срок, либо просто ушло на далекую периферию. Как результат, «фабрика по производству будущего», каковой всегда считалась область фантастической литературы, сбоит или простаивает. Авторы сборника «Новое будущее» берут на себя героический труд запустить шестеренки этой фабрики заново и предложить читателю тот образ будущего, который просматривается из дня сегодняшнего. И, как обычно, о настоящем этот образ сообщает нам едва ли не больше, чем о том, что ждет нас впереди."
+   ,link:"book/avtorov_Kollektiv_Novoe_Buduschee_(sbornik).epub", },
+    {
+        "id": "a26",
+        "title": "Новая|ПАРАДИZ",
+        "img": "https://fantasy-worlds.org/img/preview/342/34229.jpg",
+        "description": "Имитация, разрушенные иллюзии... За пропуск в новую жизнь надо платить. Великолепная жизнь и вовсе недоступна, вернее, доступна совсем единицам. А так тебя ждёт запретная зона, с населяющими её мутантами, кордоны, ограждения и стена. То есть каждый выживает в этом разрушенном мире как может. Но есть ещё параллельный мир со множеством Вселенных, куда так трудно, но заманчиво попасть. И там сыграть свою новую роль. Проходя через все события, существующие одновременно, надо не сломаться и выбрать что-то одно. Между торжеством справедливости и безнадёжностью и вызовом смерти. Человек противостоит тому, чтобы не увязнуть в потоке времени. Чтобы выбраться из реальности поддельной. Чтобы преодолеть границу между реальностью и грёзами."
+   ,link:"book/Novaya_Dina_Paradiz.epub", },
+    {
+        "id": "a27",
+        "title": "БРЭДБЕРИ|САМЫЕ ЗНАМЕНИТЫЕ ПРОИЗВЕДЕНИЯ ПИСАТЕЛЯ В ОДНОМ ТОМЕ",
+        "img": "https://fantasy-worlds.org/img/preview/340/34064.jpg",
+        "description": "Мастер мирового масштаба, совмещающий в литературе несовместимое. Создатель таких хрестоматийных шедевров, как 'Марсианские хроники', 'Вино из одуванчиков', '451° по Фаренгейту' и так далее, и так далее. Лауреат многих литературных премий. Это Рэй Брэдбери. Магический реализм его прозы, рукотворные механизмы радости, переносящие человека из настоящего в волшебные миры детства, чудо приобщения к великой тайне Литературы, щедро раздариваемое читателю, давно вывели Рэя Брэдбери на классическую орбиту. Собранные в этой книге произведения – достойное тому подтверждение."
+   ,link:"book/Bredberi_Rey__Samyie_znamenityie_proizvedeniya_pisatelya_v_odnom_tome_(sbornik).epub", },
+    {
+        "id": "a28",
+        "title": "Нуждин|[ ЗОНА ПИТЕР ] ВО ИМЯ СПРАВЕДЛИВОСТИ",
+        "img": "https://fantasy-worlds.org/img/preview/340/34000.jpg",
+        "description": "Роман написан в жанре киберпанка с элементами военной фантастики. Это литературное произведение о группах людей, которым постоянно приходится бороться за выживание. В условиях разрушенной экономики люди сами создают группы и объединения для защиты своих интересов. Группа выживших людей, в разрушенном после глобального катаклизма Санкт-Петербурге, пытается выжить и защитить свои идеалы справедливости. В условиях разрушенного города они ищут путь к лучшей жизни."
+   ,link:"book/Zona_Piter__Vo_imya_spravedlivosti.epub", },
+    {
+        "id": "a29",
+        "title": "ЖИВОВЫ|ОСТРОВ НЕМО",
+        "img": "https://fantasy-worlds.org/img/preview/339/33999.jpg",
+        "description": "Глобальный катаклизм привёл к разрушению всех мировых систем. Наша Земля стала совершенно другой. Мир погружён в хаос. Люди пытаются выжить в разрушенных городах, создают группы и объединения для защиты своих интересов. Группа выживших людей в разрушенном Санкт-Петербурге ищет путь к лучшей жизни за пределами города. Они пытаются найти путь через разрушенные земли и города к новой жизни."
+   ,link:"book/Ostrov_Nemo.epub", },
+    {
+        "id": "a30",
+        "title": "БЛЭКМЕН|КРЕСТИКИ НОЛИКИ",
+        "img": "https://fantasy-worlds.org/img/preview/338/33801.jpg",
+        "description": "В романе описываются последствия глобального катаклизма, который привёл к разрушению всех мировых систем. Земля стала совершенно другой. В этих условиях группа выживших людей в Санкт-Петербурге пытается выжить и найти путь к лучшей жизни. Они ищут возможность выбраться из разрушенного города и найти новый дом."
+   ,link:"book/Krestiki_i_noliki.epub", },
+  {
+        "id": "a31",
+        "title": "Blizna|Księgi Skór. Tom 3",
+        "img": "https://fantasy-worlds.org/img/preview/346/34696.jpg",
+        "description": "Leora nie wie już, gdzie jest jej właściwe miejsce na ziemi. Czy u boku naznaczonych, czy może wraz z nienaznaczonymi. Czuje się odrzucona zarówno przez mieszkańców Saintstone, jak i Featherstone. Postanawia wyrwać się z okowów tej wzajemnej nienawiści. Marzy o tym, by wziąć sprawy w swoje ręce. Oplata ją jednak sieć intryg, z której nie łatwo będzie jej się wyzwolić. Na razie musi być posłuszna rozkazom burmistrza, a bajarka Mel nie okazuje dziewczynie przychylności. Czy Leora okaże się wystarczająco silna? Czy uda jej się poznać odpowiedzi na wszystkie dręczące ją pytania? Oto finał bestsellerowego cyklu, który podbił serca młodych czytelników na całym świecie! I to finał, dodajmy, absolutnie zaskakujący. Czytając 'Tusz' dowiadywaliśmy się wraz z Leorą, że wszystko, w co tak mocno wierzymy, może okazać się iluzją. Na kartach 'Iskry' dokonaliśmy odkrycia, że każda historia ma co najmniej dwie strony. Teraz przyszedł czas na to, aby Leora zaczęła tworzyć własną historię i dotarła do najwyższej prawdy. Do prawdy o sensie własnego istnienia! Zanim to jednak nastąpi, czeka na nią moc niezwykłych zdarzeń, zaskakujących zwrotów akcji oraz odkryć, które wzburzą krew w żyłach zarówno naszej bohaterki, jak i nas samych."
+   ,link:"book/Metka.epub", },
+    {
+        "id": "a32",
+        "title": "БРЭДБЕРИ|451 ПО ФОРЕНГЕЙТУ",
+        "img": "https://fantasy-worlds.org/img/preview/346/34650.jpg",
+        "description": "451° по Фаренгейту – температура, при которой воспламеняется и горит бумага. Философская антиутопия Брэдбери рисует беспросветную картину развития постиндустриального общества: это мир будущего, в котором все письменные издания безжалостно уничтожаются специальным отрядом пожарных, а хранение книг преследуется по закону, интерактивное телевидение успешно служит всеобщему оболваниванию, карательная психиатрия решительно разбирается с редкими инакомыслящими, а на охоту за неисправимыми диссидентами выходит электрический пес… Роман, принесший своему творцу мировую известность."
+   ,link:"book/Bredberi_Rey__451_gradus_po_Farengeytu_(perevod_Vitaliya_Babenko).epub", },
+    {
+        id: "b1",
+        title: "ГЕРШТЕЙН|КАЖДЫЙ ОХОТНИК",
+        img: "https://fantasy-worlds.org/img/preview/357/35749.jpg",
+        description: "В романе 'Каждый охотник' Герштейн представляет читателям захватывающий мир приключений и интриг. Главный герой оказывается в центре событий, где ему приходится искать выход из сложных ситуаций и сталкиваться с темными силами. Он должен использовать все свои навыки и смекалку, чтобы выжить и раскрыть тайну, которая может изменить ход истории."
+   ,link:"book/Gershteyn_Yuliya_Kajdyiy_ohotnik (1).epub", },
+    {
+        id: "b2",
+        title: "ПЕПЕЛ&ПЕРО|Знания могут убить",
+        img: "https://fantasy-worlds.org/img/preview/355/35525.jpg",
+        description: "В книге 'Знания могут убить' Пепел и Перо вводят читателя в мир магии и опасностей, где каждый шаг может стать решающим. Главный герой исследует запретные знания, которые скрывают темные силы, способные нанести смертельный удар. Его путешествие наполнено опасностями и неожиданными открытиями, заставляющими задуматься над ценой знаний."
+   ,link:"book/", },
+    {
+        id: "b3",
+        title: "Кабаков|Невозвращенец",
+        img: "https://fantasy-worlds.org/img/preview/354/35435.jpg",
+        description: "В романе 'Невозвращенец' Кабаков рассказывает историю о загадочном исчезновении, которое возвращает главного героя к его собственному прошлому. Столкновение с тайнами и внутренними демонами приводит к разгадке загадки, открывая новые горизонты и возможности."
+   ,link:"book/Kabakov_Aleksandr_[Puteshestviya_ekstrapolyatora]_Nevozvraschenets__Prigovorennyiy__Beglets_(sbornik) (1).epub", },
+    {
+        id: "b4",
+        title: "Мундт|ЗЕРКАЛО ДЛЯ НИКОГО",
+        img: "https://fantasy-worlds.org/img/preview/353/35347.jpg",
+        description: "В книге 'Зеркало для никого' Мундт создает захватывающий мир фантастических приключений и загадок. Главный герой оказывается втянутым в путешествие сквозь зеркало, где каждый шаг открывает новые тайны и опасности."
+   ,link:"book/Mundt_Lara_Zerkalo_dlya_nikogo.epub", },
+    {
+        id: "b5",
+        title: "ФОКИН|ЖИЗНЬ ЛЕНРО АВЕЛЬЦА",
+        img: "https://fantasy-worlds.org/img/preview/353/35317.jpg",
+        description: "В романе 'Жизнь Ленро Авельца' Фокин рассказывает о судьбе главного героя, который оказывается втянутым в опасные и сложные события. Его путешествие наполнено драмой и неожиданными поворотами судьбы, заставляющими задуматься над ценой собственных поступков."
+   ,link:"book/Jizn_Lenro_Aveltsa.epub", },
+    {
+        id: "b6",
+        title: "ОРУЭЛЛ|Все романы в одном томе",
+        img: "https://fantasy-worlds.org/img/preview/352/35240.jpg",
+        description: "В книге собраны все романы Оруэлла в одном томе, предоставляя читателю возможность погрузиться в разнообразные миры и истории, созданные этим талантливым автором."
+   ,link:"book/Oruell_Djordj_Vse_romanyi_v_odnom_tome_(sbornik).epub", },
+    {
+        id: "b7",
+        title: "ПАНОВ|ЯРКОСТЬ",
+        img: "https://fantasy-worlds.org/img/preview/351/35155.jpg",
+        description: "В романе 'Яркость' Панов представляет читателю захватывающую историю о борьбе за свет и тьму. Главный герой оказывается в центре конфликта, где каждый его шаг может изменить ход истории."
+   ,link:"book/Panov_Vadim_[(Beschelo)vechnost#1]_Yar(k)ost.epub", },
+    {
+        id: "b8",
+        title: "ЧБУ|Последнее поколение",
+        img: "https://fantasy-worlds.org/img/preview/350/35091.jpg",
+        description: "В книге 'Последнее поколение' ЧБУ рассказывает о борьбе за выживание и будущее человечества. Главные герои оказываются в опасных ситуациях, где им приходится искать пути к спасению и надежде."
+   ,link:"book/Poslednee_pokolenie.epub", },
+    {
+        id: "b9",
+        title: "ТАММЕН|ВЕЧНОСТЬ БЕЗ ВЕРЫ",
+        img: "https://fantasy-worlds.org/img/preview/348/34863.jpg",
+        description: "В романе 'Вечность без веры' Таммен представляет читателю захватывающий мир магии и загадок. Главный герой и его спутники оказываются в опасных ситуациях, где им приходится бороться за свою жизнь и будущее."
+   ,link:"book/Tammen_Anastasiya_Vechnost_bez_Veryi.epub", },
+    {
+        id: "b10",
+        title: "МАЙЛЗ|ИГРА КРОЛИКОВ",
+        img: "https://fantasy-worlds.org/img/preview/347/34729.jpg",
+        description: "В книге 'Игра кроликов' Мэйлз рассказывает о захватывающем мире интриг и загадок. Главный герой сталкивается с опасными противниками и тайнами, которые заставляют его идти на все, чтобы выжить."
+   ,link:"book/Maylz_Terri_Igra_v_krolikov.epub", },
+    {
+        id: "b11",
+        title: "Корсак|[ БЕЛОЕ НЕБО ] ПРИ НЕОБХОДИМОСТИ УНИЧТОЖИТЬ",
+        img: "https://fantasy-worlds.org/img/preview/346/34677.jpg",
+        description: "В романе 'При необходимости уничтожить' Корсак представляет читателю захватывающий мир шпионажа и интриг. Главный герой оказывается в центре событий, где каждое его решение может изменить ход истории."
+   ,link:"book/Pri_neobhodimosti_unichtojit.epub", },
+    {
+        id: "b12",
+        title: "Нуждин|[ ЗОНА ПИТЕР ] ТАМ, ГДЕ ВОДЯТСЯ ЧУДОВИЩА",
+        img: "https://fantasy-worlds.org/img/preview/345/34556.jpg",
+        description: "В книге 'Там, где водятся чудовища' Нуждин рассказывает о захватывающем мире тайн и загадок. Главные герои оказываются в опасных ситуациях, где каждый шаг может стать решающим."
+   ,link:"book/Tam_gde_vodyatsya_chudovischa.epub", },
+    {
+        id: "b13",
+        title: "ВЕСТЕРФЕЛЬД|САМОЗВАНКА",
+        img: "https://fantasy-worlds.org/img/preview/342/34299.jpg",
+        description: "В романе 'Самозванка' Вестерфельд представляет читателю захватывающую историю о силе и предательстве. Главная героиня оказывается втянутой в опасные интриги, где ей приходится бороться за свою жизнь и свободу."
+   ,link:"book/Vesterfeld_Skott_[Samozvanka#1]_Samozvanka.epub", },
+    {
+        id: "b14",
+        title: "СОЛОВЬЕВ|РАУБРИТТЕР ||| FIDEM",
+        img: "https://fantasy-worlds.org/img/preview/340/34037.jpg",
+        description: "В книге 'Раубриттер' Соловьев рассказывает историю о великом воине и его подвигах. Главный герой отправляется в опасное путешествие, чтобы защитить свой народ и справиться с могущественным врагом."
+   ,link:"book/Fidem.epub", },
+    {
+        id: "b15",
+        title: "СОЁН|СНЕЖНЫЙ ШАР",
+        img: "https://fantasy-worlds.org/img/preview/339/33955.jpg",
+        description: "В романе 'Снежный шар' Соён представляет читателю увлекательную историю о приключениях и дружбе. Главный герой оказывается в мире магии и волшебства, где каждый его шаг наполнен опасностями и открытиями."
+   ,link:"book/Soyon_Pak_Snejnyiy_shar.epub", },
+    {
+        id: "b16",
+        title: "Корсак|[ БЕЛОЕ НЕБО ] ПРИ НЕОБХОДИМОСТИ УНИЧТОЖИТЬ",
+        img: "https://fantasy-worlds.org/img/preview/346/34677.jpg",
+        description: "В романе 'При необходимости уничтожить' Корсак представляет читателю захватывающий мир шпионажа и загадок. Главный герой сталкивается с противниками, чьи намерения могут привести к катастрофическим последствиям."
+        ,link:"book/Pri_neobhodimosti_unichtojit (1).epub"
+    }
+]
+books.forEach(book => {
+    document.querySelector(`#${book.id}`).addEventListener('click', function() {
+        const newWindow = window.open("", "_blank");
+        const doc = newWindow.document;
+
+        doc.write(`
+            <!DOCTYPE html>
+            <html lang="ru">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>${book.title}</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 20px;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    p {
+                        max-width: 600px;
+                        text-align: justify;
+                    }
+                    button {
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                </style>
+            </head>
+            <body>
+                <img src="${book.img}" alt="${book.title}">
+<p>${book.description}</p>
+<a href="${book.link}" download>Скачать книгу</a>
+<button onclick="window.close()">Назад к списку книг</button>
+            </body>
+            </html>
+        `);
+        doc.close();
+    });
+});
+</script>
 </body>
 </html>
  
