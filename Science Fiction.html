@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,145 +65,108 @@ footer {
         display: block;
         margin-bottom: 10px;
     }
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.search-container {
+  width: 300px;
+  margin: 50px auto;
+}
+
+.search-container input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container input[type=text]:focus {
+  border-color: dodgerblue;
+}
+
+.search-container button {
+  width: 100%;
+  padding: 10px 18px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #4CAF50;
+}
 </style>
 </head>
 <body>
-   
+    <div class="search-container">
+        <input id="searchInput" type="text" placeholder="Search...">
+        <button id="searchButton" type="button">Search</button>
+      </div>
+
 <div class="imgCenter">
-<div class="book"><img src="https://www.fantasy-worlds.net/img/preview/354/35476.jpg" alt="error"> <p class="bookCaption">₽35</p></div>  
-<div class="book"><img src="https://www.fantasy-worlds.net/img/preview/354/35475.jpg" alt="error"> <p class="bookCaption">₽35</p></div>
-<div class="book"><img src="https://www.fantasy-worlds.net/img/preview/354/35474.jpg" alt="error"> <p class="bookCaption">₽35</p></div>
-<div class="book"><img src="https://www.fantasy-worlds.net/img/preview/354/35473.jpg" alt="error"> <p class="bookCaption">₽35</p></div>
-<div class="book"><img src="https://www.fantasy-worlds.net/img/preview/354/35472.jpg" alt="error"> <p class="bookCaption">₽35</p></div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35472.jpg" alt=""> <p class="bookCaption">₽35</p>
+<div class="book"><img id="a1" src="https://www.fantasy-worlds.net/img/preview/354/35476.jpg" alt="error"> <p class="bookCaption">КОБЦЕВА|ДВУЛИКИЕ</p></div>  
+<div class="book"><img id="b1"  src="https://www.fantasy-worlds.net/img/preview/354/35475.jpg" alt="error"> <p class="bookCaption">ГРЁЗЫ ТРЕТЬЕЙ ПЛАНЕТЫ</p></div>
+<div class="book"><img id="a2" src="https://www.fantasy-worlds.net/img/preview/354/35474.jpg" alt="error"> <p class="bookCaption">ГОРОД СПИТ, ПРОСЫПАЕТСЯ МАГИЯ</p></div>
+<div class="book"><img id="a3" src="https://www.fantasy-worlds.net/img/preview/354/35473.jpg" alt="error"> <p class="bookCaption">Лейн|ИЗ ЗВЕЗД И КОСТЕЙ</p></div>
+<div class="book"><img id="b2" src="https://www.fantasy-worlds.net/img/preview/354/35472.jpg" alt="error"> <p class="bookCaption">СЛОН МЕЧА И МАГИИ</p></div>
+<div class="book"><img id="a4"  src="https://www.fantasy-worlds.net/img/preview/354/35430.jpg" alt=""> <p class="bookCaption">ХЕЙС|ПРОБУЖДЕНИЕ ТЬМЫ</p></div>
+<div class="book"><img id="a5" src="https://www.fantasy-worlds.net/img/preview/354/35471.jpg" alt=""> <p class="bookCaption">БРЭДБЕРИ|Механизмы радости</p></div>
+<div class="book"><img id="b3" src="https://www.fantasy-worlds.net/img/preview/354/35470.jpg" alt=""> <p class="bookCaption">Штольц|Демонология Сангомара</p></div>
+<div class="book"><img id="a6" src="https://www.fantasy-worlds.net/img/preview/354/35469.jpg" alt=""> <p class="bookCaption">Нэвила|КОЛДУНЫ</p></div>
+<div class="book"><img id="a7" src="https://www.fantasy-worlds.net/img/preview/354/35468.jpg" alt=""> <p class="bookCaption">Мейчен|Холм грез  Тайная слава</p></div>
+<div class="book"><img id="b4" src="https://www.fantasy-worlds.net/img/preview/354/35467.jpg" alt=""> <p class="bookCaption">Бэнкс|ТРАНЗИЦИЯ</p></div>
+<div class="book"><img id="a8" src="https://www.fantasy-worlds.net/img/preview/354/35466.jpg" alt=""> <p class="bookCaption">ДИК|ВТОРАЯ МОДЕЛЬ</p></div>
+<div class="book"><img id="a9" src="https://www.fantasy-worlds.net/img/preview/354/35465.jpg" alt=""> <p class="bookCaption">НЕЖНЫЙ|ПСИХОПОМП</p></div>
+<div class="book"><img id="b5" src="https://www.fantasy-worlds.net/img/preview/354/35464.jpg" alt=""> <p class="bookCaption">ЮНА|Я ПРИДУ С ДОЖДЕМ</p></div>
+<div class="book"><img id="a10" src="https://www.fantasy-worlds.net/img/preview/354/35463.jpg" alt=""> <p class="bookCaption">Сутралинов|КРАФТЕР ИЛИ ТАИНСТВЕННАЯ ИГРА</p></div>
+<div class="book"><img id="a11" src="https://www.fantasy-worlds.net/img/preview/354/35462.jpg" alt=""> <p class="bookCaption">ПОНОМАРЕВ|Роща Ромове</p></div>
+<div class="book"><img id="b6" src="https://www.fantasy-worlds.net/img/preview/354/35461.jpg" alt=""> <p class="bookCaption">КАЛЛИРА&МАНДАННА|И НАРИСОВАННОЕ КОРОЛЕВСТВО</p></div>
+<div class="book"><img id="a12" src="https://www.fantasy-worlds.net/img/preview/354/35460.jpg" alt=""> <p class="bookCaption">Зауголная|ЗАХВАТЧИКИ. ТРОПЫ МЕЖДУ МИРАМИ</p></div>
+<div class="book"><img id="a13" src="https://www.fantasy-worlds.net/img/preview/354/35459.jpg" alt=""> <p class="bookCaption">Зауголная|ТАЙНА МЫШИНОГО КОРОЛЯ</p></div>
+<div class="book"><img id="b7" src="https://www.fantasy-worlds.net/img/preview/354/35458.jpg" alt=""> <p class="bookCaption">Зауголная|Беспорядка</p></div>
+<div class="book"><img id="a14" src="https://www.fantasy-worlds.net/img/preview/354/35457.jpg" alt=""> <p class="bookCaption">Зауголная|АСОРБЕНТ. МАНЬЯК, КОТОРЫЙ МЕНЯ ЛЮБИЛ</p></div>
+<div class="book"><img id="a15" src="https://www.fantasy-worlds.net/img/preview/354/35456.jpg" alt=""> <p class="bookCaption">УЭЛЛЕР|ХРОНИКИ БРЭДБЕРИ</p></div>
+<div class="book"><img id="b8" src="https://www.fantasy-worlds.net/img/preview/354/35455.jpg" alt=""> <p class="bookCaption">РЭЙ|РУБИН</p></div>
+<div class="book"><img id="a16" src="https://www.fantasy-worlds.net/img/preview/354/35454.jpg" alt=""> <p class="bookCaption">ТЕССЬЕ|ФАНТОМ ПОСЛЕДНИЕ ШТРИХИ</p></div>
+<div class="book"><img id="a17" src="https://www.fantasy-worlds.net/img/preview/354/35453.jpg" alt=""> <p class="bookCaption">ОГНЕЙ|МЕЖДУ ЛЮДЬМИ КНАЧЕТАМИ</p></div>
+<div class="book"><img id="b9" src="https://www.fantasy-worlds.net/img/preview/354/35452.jpg" alt=""> <p class="bookCaption">Казати|Клитемнестра</p></div>
+<div class="book"><img id="a18" src="https://www.fantasy-worlds.net/img/preview/354/35451.jpg" alt=""> <p class="bookCaption">ГЕЙЗЕР|ЗОВ ПУСТОТЫ</p></div>
+<div class="book"><img id="a19" src="https://www.fantasy-worlds.net/img/preview/354/35450.jpg" alt=""> <p class="bookCaption">ФЕВЕРС|РАГАНА</p></div>
+<div class="book"><img id="b10" src="https://www.fantasy-worlds.net/img/preview/354/35449.jpg" alt=""> <p class="bookCaption">Дилэни|ПОБЕГ ИЗ НЕРВИОНА   ВОЗВРАЩЕНИЕ В НЕРВИОН</p></div>
+<div class="book"><img id="a20" src="https://www.fantasy-worlds.net/img/preview/354/35448.jpg" alt=""> <p class="bookCaption">Файпари|Фрейя Ведущая Волков</p></div>
+<div class="book"><img id="a21" src="https://www.fantasy-worlds.net/img/preview/354/35447.jpg" alt=""> <p class="bookCaption">Найди меня там, где все начиналось</p></div>
+<div class="book"><img id="b11" src="https://www.fantasy-worlds.net/img/preview/354/35446.jpg" alt=""> <p class="bookCaption">Веспер|ПОСЛЕДНЯЯ СЕКУНДА ВСЕЛЕННОЙ</p></div>
+<div class="book"><img id="a22" src="https://www.fantasy-worlds.net/img/preview/354/35445.jpg" alt=""> <p class="bookCaption">Шалашова|КАМНИ ПОЮТ</p></div>
+<div class="book"><img id="a23" src="https://www.fantasy-worlds.net/img/preview/354/35444.jpg" alt=""> <p class="bookCaption">КЕЙ|ГОНЧАЯ</p></div>
+<div class="book"><img id="b12" src="https://www.fantasy-worlds.net/img/preview/354/35443.jpg" alt=""> <p class="bookCaption">Инспирати|ЛЮБОВЬ СЕРОГО ОТТЕНКА</p></div>
+<div class="book"><img id="a24" src="https://www.fantasy-worlds.net/img/preview/354/35442.jpg" alt=""> <p class="bookCaption">РЫЛЬСКИЕ|КРЕАХОНОВАЯ КРЕПОСТЬ</p></div>
+<div class="book"><img id="a25" src="https://www.fantasy-worlds.net/img/preview/354/35441.jpg" alt=""> <p class="bookCaption">МЕДВЕД|ТЕНЕ СВЕТ</p></div>
+<div class="book"><img id="b13" src="https://www.fantasy-worlds.net/img/preview/354/35440.jpg" alt=""> <p class="bookCaption">Гаглоев|ЧЕРНОКНИЖЕЦ</p></div>
+<div class="book"><img id="a26" src="https://www.fantasy-worlds.net/img/preview/354/35439.jpg" alt=""> <p class="bookCaption">ДИТЕРЛИЦЦИИ|В поисках УДИВЛЫ</p></div>
+<div class="book"><img id="a27" src="https://www.fantasy-worlds.net/img/preview/354/35438.jpg" alt=""> <p class="bookCaption">ВОЛКОВА|ВОСХОД АВРОРЫ</p></div>
+<div class="book"><img id="b14" src="https://www.fantasy-worlds.net/img/preview/354/35437.jpg" alt=""> <p class="bookCaption">Смирнов|Варенье наизнанку и максимум козы!</p></div>
+<div class="book"><img id="a28" src="https://www.fantasy-worlds.net/img/preview/354/35436.jpg" alt=""> <p class="bookCaption">Смирнов|Радио безумных ананасов</p></div>
+<div class="book"><img id="a29" src="https://www.fantasy-worlds.net/img/preview/354/35435.jpg" alt=""> <p class="bookCaption">Кабаков|Невозвращенец</p></div>
+<div class="book"><img id="b15" src="https://www.fantasy-worlds.net/img/preview/354/35434.jpg" alt=""> <p class="bookCaption">ИВАНОВА-НЕВЕРОВА|БЕЗ МОЗГОВ</p></div>
+<div class="book"><img id="a30" src="https://www.fantasy-worlds.net/img/preview/354/35433.jpg" alt=""> <p class="bookCaption">ДОЙЛ&ВЕББЕР|ПРОКЛЯТЫЕ КОРОНЫ</p></div>
+<div class="book"><img id="a31" src="https://www.fantasy-worlds.net/img/preview/354/35432.jpg" alt=""> <p class="bookCaption">САФТ|И ПРИХОДИТ НОЧЬ</p></div>
+<div class="book"><img id="b16" src="https://www.fantasy-worlds.net/img/preview/354/35431.jpg" alt=""> <p class="bookCaption">ВЕДЬМЫ ПОМЕСТЬЯ МУНШАЙН</p></div>
+<div class="book"><img id="a32" src="https://www.fantasy-worlds.net/img/preview/354/35430.jpg" alt=""> <p class="bookCaption">ХЕЙС|ПРОБУЖДЕНИЕ ТЬМЫ</p></div>
 </div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35471.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35470.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35469.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35468.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35467.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35466.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35465.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35464.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35463.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35462.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35461.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35460.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35459.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35458.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35457.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35456.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35455.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35454.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35453.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35452.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35451.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35450.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35449.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35448.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35447.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35446.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35445.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35444.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35443.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35442.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35441.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35440.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35439.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35438.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35437.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35436.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35435.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35434.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35433.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35432.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35431.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
-<div class="book">
-    <img src="https://www.fantasy-worlds.net/img/preview/354/35430.jpg" alt=""> <p class="bookCaption">₽35</p>
-</div>
+<!--<div class="book">
+    <img src="https://www.fantasy-worlds.net/img/preview/354/35430.jpg" alt=""> <p class="bookCaption">ХЕЙС|ПРОБУЖДЕНИЕ ТЬМЫ</p></div></-->
 <p></p>
 <footer>
     <a href="Fantasy.html">Fantasy</a>
@@ -212,6 +176,339 @@ footer {
     <a href="Romance.html">Romance</a>
     <a href="contact-about_us.html">contact|about us</a>
 </footer>
+
+<script>
+
+document.querySelector('#searchButton').addEventListener('click', search);
+document.getElementById('searchInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        search();
+    }
+});
+
+function search() {
+    var searchTerm = document.getElementById('searchInput').value;
+    if (searchTerm.trim() !== '') {
+        if (window.find(searchTerm)) {
+            // If the search term is found, do nothing (browser's built-in functionality will highlight the term)
+        } else {
+            // If the search term is not found, display a message
+            alert("К сожалению у нас еще нет этой книги ☹️☹️☹");
+        }
+    }
+}
+let divs = document.querySelectorAll('.book');
+
+for (let i = 0; i < divs.length; i++) {
+    divs[i].id = 'div' + (i + 1);
+}
+
+
+    const books = [
+    {
+        id: "a1",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35476.jpg",
+        description: `Несколько веков назад подданные убили королеву-ведьму за то, что та создала чудовищ. Монстры исчезли, а ее королевство разделили на множество мелких. Однако теперь и они на грани исчезновения, ведь древняя магия начала пробуждаться. Король Эфлеи мертв, в стране зреет заговор, а принц Никос возвращается домой. Его мучают пугающие сны, в которых он встречает таинственную розововолосую ведьму. Чтобы найти ее и узнать причину своих кошмаров, принц поступает на службу в инквизицию. Теперь Никос ловит магически одаренных и не остановится, пока не найдет девушку. Мираби – юная ведьма, которой нельзя оказаться в руках инквизиторов. Она никому не может довериться, ведь ее дар – ее проклятие. Девушка одна из тех, кто может возродить королеву, и тогда мир погрузится в хаос…`
+    
+,link:'book/Dvulikie.epub'},
+    {
+        id: "a2",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35474.jpg",
+        description: `Мир меняется, а вместе с ним и волшебные существа. Лешие перебрались в уютные городские парки, водяные гудят в унисон с гидроэлектростанциями, домовые гоняют чаи на собраниях многоквартирных домов. А ведьмы с оракулами что? Осваивают интернет – гадания онлайн, без регистрации и СМС! Если присмотреться под нужным углом, то в любой обыденности можно найти капельку магии. И группа авторов-предсказателей устремили взор между тканью времён: ловили волну современности, не забывая о прошлом, и смело глядели в будущее! Результатом их трудов стали произведения этой антологии. В сборник вошли самые волшебные рассказы Турнира Городского Фэнтези, проводимого клубом «Бумажный Слон».`
+,link:'book/avtorov_Kollektiv_Gorod_spit_prosyipaetsya_magiya_(sbornik).epub'},
+    {
+        id: "a3",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35473.jpg",
+        description: `Аурелия всегда была одиночкой. С детства над девушкой издевались из-за того, что она приемная дочь самого могущественного человека в галактике. Да еще и киборг. Именно поэтому она решила доказать всем, чего она стоит. Однако ее первое задание в качестве агента оперативной группы закончилось катастрофой. Аурелия не успела поймать подозреваемого, обвиненного в убийстве собственной семьи. Девушку отстранили от дела, и она решила провести расследование втайне. Пытаясь докопаться до истины, Аурелия обнаружила ряд загадочных фактов о других похожих преступлениях. А также непостижимую тьму, скрытую в глубинах галактики. Тьму, которая угрожает всему, что ей дорого. Ту, что связана с ее прошлым. Тьму, что учуяла девушку и не остановится ни перед чем, чтобы поймать свою добычу.`
+,link:'book/Iz_zvyozd_i_kostey.epub'},
+    {
+        id: "a4",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35430.jpg",
+        description: `Девятнадцать лет Регина Дарквуд жила среди людей и считала себя обычным человеком с заурядными проблемами. Девятнадцать лет мать прятала дочь, скрываясь от возмездия. Но жизнь Регины переворачивается с ног на голову, когда их настигает ковен ведьм и она узнает, что и сама является ведьмой. И пока Регина постигает колдовское мастерство, вокруг нее начинает сгущаться мрак, а место, которое она вынуждена называть домом, – обрастать секретами. Удастся ли ей раскрыть все загадки ковена и узнать тайну своего предназначения? И устоит ли она перед соблазном тьмы, нашептывающей сладкие речи?..`
+,link:'book/Probujdenie_Tmyi.epub'},
+    {
+        id: "a5",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35471.jpg",
+        description: `У этих механизмов никогда не бывает сбоев. Они вечны, как вечный двигатель и снега на вершине Килиманджаро. Потому что человек, их создавший, один из лучших в мире выдумщиков небывалых вещей, Рэй Брэдбери, писатель, фантаст, поэт, для которого создавать Механизмы радости такое же привычное ремесло, как для пекаря делать хлеб, а для винодела - вино.`
+,link:'book/Bredberi_Rey__Mehanizmyi_radosti_(sbornik_novyie_perevodyi).epub'},
+    {
+        id: "a6",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35469.jpg",
+        description: `Том вместе с семьей переезжает в сельский коттедж. Дом достался им по дешевке, не в последнюю очередь потому, что его предыдущий владелец совершил самоубийство. И никто не знает почему. Уже через несколько дней Том понимает, что, вдобавок к ремонту и плесени на стенах, ему придется столкнуться с еще одной проблемой: крайне неприятными и откровенно враждебными соседями, пожилой четой по фамилии Мут. Вскоре ссоры и мелкие дрязги перерастают в нечто куда более зловещее. Том начинает подозревать, что пара сварливых стариков за забором повелевает неземными силами, темной магией, которая древнее странного леса вокруг. И теперь Тому придется сражаться не только за собственный рассудок, но и за жизнь своей семьи.`
+,link:'book/Nevill_Adam_Koldunyi.epub'},
+    {
+        id: "a7",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35468.jpg",
+        description: `Артур Мейчен - великий романтик, один из основоположников мистического жанра. Среди многочисленных поклонников его творчества можно назвать Оскара Уайльда, Алистера Кроули, Говарда Филлипса Лавкрафта, Хорхе Луиса Борхеса, Стивена Кинга, Гильермо дель Торо... Артур Мейчен родился и вырос в Уэльсе, где, по словам Лавкрафта, "впитал в себя средневековую тайну темных лесов и древних обычаев". Возможно, отсюда эта неповторимая атмосфера мистического трепета, царящая во всех книгах писателя, чьи герои сталкиваются с мрачными загадками жизни и смерти… В настоящее издание вошли два романа Мейчена, которые условно можно назвать "автобиографическими". Их герои с самого детства чувствуют себя чужими в суматошном мире больших городов. Богатое воображение и писательский дар заставляют их искать убежище в грезах, где среди идиллической природы обитают странные, причудливые создания…`
+,link:'book/Meychen_Artur_Holm_grez__Taynaya_slava_(sbornik).epub'},
+    {
+        id: "a8",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35466.jpg",
+        description: `Перед вами первый том полного собрания рассказов и повестей одного из самых выдающихся новаторов научной фантастики - Филипа К. Дика. На страницах этой книги вы познакомитесь с ранним творчеством писателя, раскрывающим его интересы, идеи и поиск методов, которые превратили "бульварную" фантастику в оригинальные и иногда параноидальные картины, полные сатиры, не лишенные юмора и доведенные до абсурда. В первый том собрания рассказов Филипа К. Дика вошли произведения, написанные в 1947-1952 годах, некоторые из которых сопровождаются комментариями самого автора.`
+,link:'book/Dik_Filip_Vtoraya_model_(sbornik_perevod_Dmitriya_Starkova).epub'},
+    {
+        id: "a9",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35465.jpg",
+        description: `Удивительная история Марка Питовранова, понимавшего мертвых и побывавшего в загробном мире - в новом романе Александра Нежного "Психопомп".`
+,link:'book/Nejnyiy_Aleksandr_Psihopomp.epub'},
+    {
+        id: "a10",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35463.jpg",
+        description: `Так сложились обстоятельства, что шестикласснику Василию вместе с мамой пришлось покинуть Москву. Теперь они живут в маленьком городке, где все смотрят на него косо, и мальчишке каждый день приходится доказывать окружающим, что он не слюнтяй и не хлюпик. И вот как-то раз вечером он увидел в окне напротив красивую девочку, которая почему-то плакала. На следующий день ему в школу подкинули записку: "Срочно нужно бежать, помогите!" Кто же она, эта красавица? И как ей помочь?`
+,link:'book/Sugralinov_Daniyar_Krafter_ili_Tainstvennaya_igra.epub'},
+ {
+        id: "a11",
+        title: "ПОНОМАРЕВ|Роща Ромове",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35462.jpg",
+        description: "Как незабываемо провести последние дни осенних каникул? Отправиться на пикник? Собрать материал для школьного исторического проекта? Кстати, пикник можно устроить в роще, где семь веков назад располагалось Ромове, древнее святилище пруссов, уничтоженное тевтонскими рыцарями во время Крестовых походов, и откуда иногда не возвращаются люди. А фотки для проекта можно сделать в заброшенном немецком доте, где за стальной гермодверью скрывается лестница, ведущая глубоко вниз, под землю, к железной дороге, где всё ещё идёт 1945 год. Такие выходные четверо калининградских школьников точно не забудут."
+,link:'book/Ponomaryov_Boris_Roscha_Romove__Teni_temnotyi_(sbornik).epub'},
+    {
+        id: "a12",
+        title: "Зауголная|ЗАХВАТЧИКИ. ТРОПЫ МЕЖДУ МИРАМИ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35460.jpg",
+        description: "Сводные брат с сестрой, Димка и Тедди, а с ними и птичья принцесса Тинатин не успели покинуть Долину, как в нее пришел отец Тедди, ненаследный мышиный король Алисо. Если верить ему, мать Димки где-то здесь, в долине и ее нужно найти, пока она не погибла. Только можно ли верить Алисо?.. Тедди поверила ему и лишилась своего волшебного Голоса. Теперь ее отец собирает войско против ничего не подозревающего людского мира, намереваясь с помощью мышиной армии и Голоса Тедди завоевать всю страну, а Тедди ничего не может поделать, ведь без Голоса она бессильна! Или все-таки нет? Ведь у нее есть Димка, Тинатин, мышка Нинка и другие, пока не известные ей союзники. И Матильда. Потому что мама обязательно придет, а Голос… Голос один раз нужно потерять, чтобы стать могущественной Королевой, так говорила Мара."
+,link:'book/Tropyi_mejdu_mirami.epub'},
+    {
+        id: "a13",
+        title: "Зауголная|ТАЙНА МЫШИНОГО КОРОЛЯ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35459.jpg",
+        description: "Теодоре, которую все зовут просто Тедди, исполнилось тринадцать, и все вокруг нее изменилось. Вечно занятый отец, который раньше выражал заботу и любовь подарками и выполнял все ее капризы, отправлял в любые кружки и секции, вдруг охладел и нашел новую жену, приведя в их с Тедди дом не только мачеху, но и ее сына. К счастью, мачеха оказывается совсем не такой, как представляла Тедди, а сводный брат Димка становится не только душой компании в школе, но и лучшим другом своей сестры. Но это только начало, ведь отец отправляет их обоих на все лето к бабушке в деревню. Выпрыгивая из электрички на станции, которой не было в расписании, подростки даже не подозревают, что попадут в параллельный мир, где живут мыши и птицы ростом с человека, а люди словно оказались в загадочной долине прямиком из XVI века… Будет ли возможность у брата и сестры вернуться обратно в свой привычный мир? Какие тайны им откроются и как Тедди принять, что она самая настоящая принцесса, пусть и не совсем человек?"
+,link:'book/Tayna_myishinogo_korolya.epub'},
+    {
+        id: "a14",
+        title: "Зауголная|АСОРБЕНТ. МАНЬЯК, КОТОРЫЙ МЕНЯ ЛЮБИЛ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35457.jpg",
+        description: "Он любил ее так СИЛЬНО, что она не смогла ему отказать. Он так СИЛЬНО ее любил, что она не могла с ним оставаться. Он любил ее так СИЛЬНО, что не смог ее отпустить даже после смерти. Анна согласилась на неподходящего парня. Слишком любящего, слишком угодливого, слишком странного. Она и не подозревала, что любовь может быть такой удушливой, извращенной, пугающей. А потом Он умер, и Анна подумала, что свободна… Но Он продолжает разрушать ее жизнь. Анна получает письма с пугающими рисунками. Каждое новое письмо детальнее и кровожаднее предыдущего. И их автором может быть только Он. И скоро Он перейдет от слов к делу. Как ей спастись от Него, если даже смерть не смогла разлучить их?"
+,link:'book/Zaugolnaya_Oksana_Absorbent__Manyak_kotoryiy_menya_lyubil.epub'},
+    {
+        id: "a15",
+        title: "УЭЛЛЕР|ХРОНИКИ БРЭДБЕРИ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35456.jpg",
+        description: "В этой первой в истории авторизованной биографии отмеченному наградами журналисту Сэму Уэллеру была предоставлена привилегия погрузиться в собственный мир Брэдбери. Уэллеровский инстинкт исследователя в сочетании с доступом к частным архивам и ранее неопубликованным письмам писателя создают захватывающую и замечательную историю. Вся жизнь Брэдбери расписана по минутам: его попытки начать карьеру актера, литературный прорыв в «криминальных» журналах сороковых годов и его роман на всю жизнь с женой Маргерет. Здесь впервые представлена каждая деталь захватывающей истории этого загадочного писателя, раскрывающей все великолепие, волшебство и тайну настоящей литературной легенды."
+,link:'book/Ueller_Sem_Hroniki_Bredberi__Jizn_Reya_Bredberi.epub'},
+    {
+        id: "a16",
+        title: "ТЕССЬЕ|ФАНТОМ ПОСЛЕДНИЕ ШТРИХИ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35454.jpg",
+        description: "«Фантом». Пусть Нед и ребенок, но он прекрасно знает: на свете существует нечто страшное, живущее во тьме. Оно явилось в ту ночь, когда мать Неда чуть не умерла. После того случая его семья переехала в прибрежный городок Линнхейвен, но зло последовало за ними. Теперь Неду придется сразиться с ним в одиночку, и для этого мальчику понадобится настоящая храбрость, ведь взрослые ему не верят и даже не замечают, что кошмар уже проник в их души и искажает все вокруг. «Последние штрихи». Доктор Том Сазерленд приезжает отдохнуть в Лондон, где знакомится с эксцентричным, но гениальным пластическим хирургом Роджером Нордхэгеном и его прекрасной ассистенткой Линой Равашоль. Том влюбляется в Лину, несмотря на ее необычные желания и склонность к жестокости, и в своем ослеплении даже не подозревает, в какую ловушку попал. Ведь доктор Нордхэген скрывает кровавый и страшный секрет, а сам Том вскоре узнает, насколько заразительным может быть безумие."
+,link:'book/Tesser_Tomas_Fantom__Poslednie_shtrihi_(sbornik).epub'},
+    {
+        id: "a17",
+        title: "ОГНЕЙ|МЕЖДУ ЛЮДЬМИ КНАЧЕТАМИ",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35453.jpg",
+        description: "Силь воспитан кначетами. Кначеты-животные катали его на себе. Кначеты-насекомые приносили еду. Кначеты-маги учили колдовать. Кначеты-гуманоиды учили говорить, рассказывали про устройство мира и империю, окружающую их. Кнатчеты знают, что ненавидеть все чужое и незнакомое – в природе людей. Тем более, если у этих чужих есть крылья, шерсть или рога, как у кнатчетов. Вы бы хотели жить в мире, где страны процветают благодаря магии? Кначеты – нет. В мире людей их ждёт лишь смерть в виде элиторов – воинов, обладающих уникальным даром разрушать магию кначетов и уничтожающих любого из них без разбора и суда. С раннего детства Силь усвоил: люди – враги. Но волей случая он обнаруживает в себе дар элитора. И принимает решение – стать им, чтобы исправить систему изнутри. Вот только на что придётся пойти нашему герою, решая эту проблему?"
+,link:'book/Mejdu_lyudmi_i_knachetami.epub'},
+    {
+        id: "a18",
+        title: "Гейзер|Зов пустоты",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35451.jpg",
+        description: "Шедевры классической американской прозы стали доступными. Длинные густые травы долины, окружённой высоченными скалами, и старый ковбой, привыкший к простым удовольствиям и долгой, трудной жизни. Мужчина, как и его единственная корова, отлично адаптирован к таким условиям. Но когда в долине появляется незнакомец, похититель коров и насильник, напряжение между ним и ковбоем вырастает до предела. В легендарной истории Кирпича о Стальном Утёсе исследуются взаимоотношения между человеком и природой, законом и беспорядком, неуловимой линией между справедливостью и местью."
+,link:'book/Zov_pustotyi.epub'},
+    {
+        id: "a19",
+        title: "ФЕВЕРС|РАГАНА",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35450.jpg",
+        description: "Петр Первичкин и не подозревал, что тихая деревушка, где он жил, окажется передовой линией битвы за планету. Его дедушка, бывший дракономорф и сильнейший маг, открывает ему этот мир и его обязанности. С тех пор Петр должен защищать свой дом и своих близких от неизбежной атаки роя Драконов. Он должен научиться контролировать свои силы и стать настоящим воином, способным противостоять древнему злу. В этом ему помогут старые и новые друзья, но решающую роль сыграет собственная храбрость и решимость."
+,link:'book/Ragana.epub'},
+  {
+    id: 'a20',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35448.jpg',
+    description: `В Диких Землях нет никого страшнее, чем клан дикарей Кезро… Фрейе было семнадцать, когда этот злой рок обрушился на ее деревню, оставив после себя лишь холмы пепла. Дикари сожгли все вокруг дотла. Лишенная дома, потерявшая всех, кого любила, девушка была вынуждена выживать в диких лесах, прибившись к волчьей стае. Однако едва суровые метели сменились мягкими ветрами, ее настиг новый кошмар. Кезро взяли девушку в плен, но Фрейю выторговал суровый незнакомец. Его намерения чисты. Вот только железный браслет на предплечье говорит о нем больше, чем кажущаяся искренность зеленых глаз. Как можно верить тому, кто заключил союз с извергами? Фрейя ни перед кем не преклонит колен. Она подавит боль и будет ждать часа расплаты. Но, пережив суровые испытания, кровь и жестокость сражений, обретет ли она путь к свободе?`
+,link:'book/Freyya__Veduschaya_volkov.epub'},
+  {
+    id: 'a21',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35447.jpg',
+    description: `Лиу вместе с другом детства Ондо перебралась с севера страны поближе к столице, морю и Академии независимых искусств. А спустя два года наша героиня уже живет на новом месте совершенно обычной жизнью: ищет волшебные ингредиенты, делает зелья на заказ, стирает пыль с окаменевшей горгульи. И часто тоскует по Ондо, который таинственным образом пропал вскоре после начала учебы. После очередного, казалось бы, рядового заказа в жизни Лиу начинают происходить странные вещи: сначала оживает горгулья, потом Лиу лишают зельеварской лицензии, а как-то вечером в таверне она встречает новых знакомых – Таин и Лонки. Каждый из них хранит свои секреты, но объединяет их одно – во что бы то ни стало им нужно попасть в Академию. И вот Лиу, которая давно мечтала отыскать своего старого товарища, вместе с Таин и Лонки отправляется в непростое путешествие, полное опасностей и приключений, в ходе которого друзья обнаружат, что теперь от них зависит не только их собственная судьба, а, возможно, и судьба всего мира.`
+,link:'book/Yagovitina_Alena_Naydi_menya_tam_gde_vse_nachinalos.epub'},
+  {
+    id: 'a22',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35445.jpg',
+    description: `В альтернативной реальности нового романа Александры Шалашовой Советский Союз не распался, но его приметы не слишком заметны героям – они переживают глубокий внутренний кризис и погружены в воспоминания о случившейся с ними в прошлом катастрофе. Однако граница между «помнить» и «забывать» в этом мире зыбка и условна: здесь каждый может быть подвергнут воздействию Читателя, устройства нейрокоррекции, и оказаться всеми забытым. Говорят, что о человеке, которого допрашивают с помощью Читателя, все забывают. Он просто выпадает из памяти, будто и не было его. Говорят, что это милосердно – что жена не будет помнить о муже, сидящем в тюрьме, а значит, не будет страдать. Говорят, что это одно из самых главных изобретений современности. Поэтому в суд непременно зовут свидетелями всех значимых в жизни человека людей. В центре – история сложных и болезненных отношений педагога и ученика. Учитель обещает Леше новую жизнь вне детдома – и создает сообщество детей, объединенных идеями свободы и всеобщего равенства вне государства. Леша глубоко и искренне привязывается к учителю, пока однажды тот не совершает предательство. Кажется, помочь забыть о предательстве может только Читатель. Но что, если машина даст сбой – и навсегда расстаться с прошлым окажется невозможным? Герой становится перед непростым выбором – остаться обычным человеком или продолжить путь своего учителя? Читатель, прозревая его точно открытую книгу, позволяет ему сделать этот выбор. Что с памятью творится. Словно лужица тьмы поднялась с пола и накрыла, когда не ждал. А нужно думать, тренировать себя даже во тьме – но только как можно это делать, когда в ней нет и меня тоже, когда сам по себе исчезаю?`
+,link:'book/Shalashova_Aleksandra_Kamni_poyut.epub'},
+  {
+    id: 'a23',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35444.jpg',
+    description: `Иметь кровную связь с главой Королевских Гончих считается благословением, но для Темпест это проклятие, из-за которого она остается сиротой без гроша в кармане. Девушку отдают на попечение убийцам и воинам, призванным защищать королевство. Движимая гневом и клятвой отомстить за смерть своей матери, Темпест усиленно тренируется. Но стать первой девушкой-Гончей недостаточно. Теперь она должна заполучить сердце самого страшного врага королевства – Шута смертоносного оборотня, спрятавшегося в месте, окутанном мифами и тьмой. Месть никогда не достается легко, но Темпест готова пожертвовать всем, чтобы справедливость восторжествовала. Даже собственной душой или свободой… «Гончая» – ретеллинг «Белоснежки и Охотника», написанный в жанре эпического фэнтези. Это настоящее приключение, от которого невозможно оторваться. История Темпест о сердечной боли, мести и гордости увлекла меня с первой страницы», – Сильвия Мерседес, автор бестселлера «Хроники Венатрикс».`
+,link:'book/Gonchaya.epub'},
+  {
+    id: 'a24',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35442.jpg',
+    description: `В далеком будущем есть цирк, кочующий по бескрайнему космосу от планеты к планете, согласно плотному графику гастролей. Среди труппы есть два молодых дарования: Яналия – отчаянная воздушная гимнастка и Гермес – талантливый фокусник и исполнитель опасных трюков. Приключения начинаются на планете Корот – во время представления все артисты и зрители на несколько мгновений переносятся в далёкое прошлое. Наши герои начинают собственное расследование, чтобы узнать причину этих скачков, но они даже не представляют, куда это их приведёт…`
+,link:'book/Ryilskiy_German_Kreahonovaya_krepost__Vodovorotyi_vremeni.epub'},
+  {
+    id: 'a25',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35441.jpg',
+    description: `Семнадцатилетняя Тара, младшая дочь королевы Лунарии, – принцесса необычная. Дикая и необузданная воительница, она куда лучше управляется с мечом и луком, нежели с клавикордами, и чувствует себя на своем месте, охотясь на чудовищ, а не танцуя на балах. Во время сражения с одним из чудищ попавшую в беду Тару спасает загадочный незнакомец. Молодые люди испытывают друг к другу какое-то волшебное притяжение, но их связь с самого начала находится под несчастливой звездой… Сумеют ли воитель и воительница остаться вместе, несмотря на все препятствия на их пути? И какую роль предстоит сыграть в их судьбе страшному, но неотвратимому ТЕМНОМУ ПРОРОЧЕСТВУ?`
+,link:'book/Doroga_k_nevedomomu.epub'},
+  {
+    id: 'a26',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35439.jpg',
+    description: `Зиа Девять – обычная девочка, которая живет в оснащенном по последнему слову техники доме, именуемом Убежище, и воспитывается многофункциональным роботом Матр. А еще Зиа Девять ни разу не выходила на поверхность, не чувствовала, как на кожу падают капли дождя, охлаждая ее в зной, – разве это не то же самое, что стоять под душем? – и не встречала никого, кто был бы похож на нее, – то есть человека. В один не самый прекрасный день с Матр происходит что-то странное, и Зиа Девять остается одна. Ей придется самостоятельно разобраться с устройством Убежища и понять, как она там оказалась, но в процессе выяснится, что ответы, которые она получит, могут быть страшнее любых вопросов.`
+,link:'book/_V_poiskah_UdivLyi.epub'},
+  {
+    id: 'a27',
+    img: 'https://www.fantasy-worlds.net/img/preview/354/35438.jpg',
+    description: `Империя на грани коллапса. Последний Император сошёл с ума, и Имперский Город охвачен восстанием. Гвардия павших ангелов – элитный отряд, призванный хранить покой в столице, – вынуждена всеми силами подавлять волнения. Положение осложняется тем, что по древнему пророчеству за Кровавой Луной, которая вот-вот восстанет, последует Пришествие. Обычные люди боятся демонов и надеются на лучшее, а искатели магии рыщут в поисках запретных знаний. Анхель, лучший боец Гвардии, готовится к своей последней миссии – освободить столица от разрушений. Но на его пути стоят тёмные силы, которые не остановятся ни перед чем, чтобы исполнить пророчество.`
+,link:'book/Temnyiy_chas.epub'},
+
+    {
+        id: 'a28',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35436.jpg',
+        description: 'Достаточно было покрутить колёсико поиска волн на старом, таинственном радиоприёмнике, как на голову градом посыпались ананасы! А потом появилась всемогущая зайчишка, и домашний кролик стал ростом с бронтозавра, городскую больницу наводнили экзотические бабочки, полицейские превратились в ковбоев с револьверами, а строгие тёти – в черных пантер… Короче говоря, в Загривках снова начались невероятные события!'
+,link:'book/Radio_bezumnyih_ananasov.epub'},
+    {
+        id: 'a29',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35435.jpg',
+        description: 'Александр Кабаков (1943–2020) – писатель, журналист, драматург; мастер психологической прозы и интеллектуального триллера; автор романа «Всё поправимо» (премия «Большая книга»), книги воспоминаний «Аксенов» (в соавторстве с Е. Поповым), ироничных «Московских сказок» и многих других произведений. Легендарная антиутопия «Невозвращенец» сразу после выхода в 1988 году принесла автору мировую известность и оказалась мрачным пророчеством событий 1991 года. Фантасмагория «Приговоренный» – логическое продолжение «Невозвращенца», только действие перемещается в середину XXI века. Роман «Беглец» – изящная стилизация под старинный дневник. Банкир Л-ов предчувствует катастрофу начала ХХ века и сам готовится стать невозвращенцем.'
+,link:'book/Kabakov_Aleksandr_[Puteshestviya_ekstrapolyatora]_Nevozvraschenets__Prigovorennyiy__Beglets_(sbornik).epub'},
+    {
+        id: 'a30',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35433.jpg',
+        description: '«Проклятые короны» – продолжение бестселлера «Две короны», вторая часть романтического фэнтези от Кэтрин Дойл и Кэтрин Веббер, популярных молодежных авторов из Англии. Близнецы Роза и Рен стали королевами. Но, несмотря на внешнее благополучие, не все жители Эаны довольны тем, что ведьмы взошли на престол. Готовится восстание, во главе которого стоит губернатор Эдгар Бэррон. Роза решает поехать в королевский тур, чтобы завоевать доверие подданных и применить свою магию исцеления. Рен тем временем отправляется на север, чтобы спаси свою бабушку Банбу из плена. Ради ее свободы она готова заключить сделку с Алариком и сотворить для него опасное заклинание. Когда из-за этого пробуждается древнее проклятие, сестрам придется сплотиться, чтобы спасти королевство и тех, кто им дорог.'
+,link:'book/Proklyatyie_koronyi.epub'},
+    {
+        id: 'a31',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35432.jpg',
+        description: 'Бестселлер New York Times! Любовь и тайны в готическом поместье – в лучших традициях романов сестер Бронте. Романтическое фэнтези о любви, неподвластной ни обстоятельствам, ни ударам судьбы. От автора бестселлера «Особо дикая магия». Рен Сазерленд – лучшая целительница Королевской гвардии. Но одна ошибка едва не привела ее к гибели и стоила всего, что было ей дорого. Желая искупить вину, она отправляется в Колвик-Холл, где находится уединенное поместье эксцентричного аристократа. Он просит ее вылечить своего слугу от загадочной тяжелой болезни. Это мрачное место хранит множество тайн. Его гостям приходится соблюдать строгие правила: не выходить из своей комнаты после наступления темноты и ни в коем случае не покидать особняк без разрешения. Неожиданно Рен узнает, что ее пациент – не простой слуга, а Хэл Кавендиш, безжалостный убийца и заклятый враг королевства. Вскоре начинают происходить необъяснимые, леденящие кровь события, и Рен решает во что бы то ни стало разгадать секрет ужасной болезни Хэла.'
+,link:'book/Saft_Ellison_I_prihodit_noch.epub'},
+    {
+        id: 'a32',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35430.jpg',
+        description: 'Девятнадцать лет Регина Дарквуд жила среди людей и считала себя обычным человеком с заурядными проблемами. Девятнадцать лет мать прятала дочь, скрываясь от возмездия. Но жизнь Регины переворачивается с ног на голову, когда их настигает ковен ведьм и она узнает, что и сама является ведьмой. И пока Регина постигает колдовское мастерство, вокруг нее начинает сгущаться мрак, а место, которое она вынуждена называть домом, – обрастать секретами. Удастся ли ей раскрыть все загадки ковена и узнать тайну своего предназначения? И устоит ли она перед соблазном тьмы, нашептывающей сладкие речи?..'
+,link:'book/Probujdenie_Tmyi.epub'},
+    {
+        id: 'b1',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35475.jpg',
+        description: 'В романе "Грёзы третьей планеты" читатель погружается в захватывающее путешествие по миру фантастических миров и невероятных приключений. Главный герой отправляется в опасное и загадочное путешествие, где ему предстоит столкнуться с тайнами космоса и своего собственного прошлого.'
+,link:'book/avtorov_Kollektiv_Gryozyi_tretey_planetyi_(sbornik).epub'},
+    {
+        id: 'b2',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35472.jpg',
+        description: 'В книге "Слон меча и магии" автор рассказывает захватывающую историю о мире, где магия и меч вечно борются за превосходство. Главный герой оказывается в центре конфликта, где ему придется принять решение, которое изменит ход истории.'
+,link:'book/avtorov_Kollektiv_Slon_mecha_i_magii_(sbornik).epub'},
+    {
+        id: 'b3',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35470.jpg',
+        description: 'В романе "Демонология Сангомара" Штольц проводит читателя в мрачный мир, где древние демоны искушают человечество своей злобой. Главный герой сталкивается с темными силами, пытаясь раскрыть тайны прошлого и спасти мир от грядущего зла.'
+,link:'book/Hozyaeva_Severa.epub'},
+    {
+        id: 'b4',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35467.jpg',
+        description: 'В книге "Транзиция" Бэнкс представляет читателю футуристический мир, где технологии и биология сливаются воедино, создавая новые возможности и опасности. Главный герой пытается найти свое место в этом мире, где границы между человеком и машиной стираются.'
+,link:'book/Benks_Ien_Tranzitsiya.epub'},
+    {
+        id: 'b5',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35464.jpg',
+        description: 'В романе "Я приду с дождем" Юна рассказывает о волнующей истории любви и предательства. Главные герои оказываются втянутыми в судьбоносные события, где каждое решение может стать решающим в их жизни.'
+,link:'book/Kim_Yuna_Ya_pridu_s_dojdyom.epub'},
+    {
+        id: 'b6',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35461.jpg',
+        description: 'В книге "И нарисованное королевство" Каллира и Манданна создают мир магии и волшебства, где каждая картина и каждый рисунок обретают жизнь. Главный герой попадает в этот мир, где ему придется преодолеть множество испытаний, чтобы вернуться в реальный мир.'
+,link:'book/Mandanna_Sangu_Kiki_Kallira_i_narisovannoe_korolevstvo.epub'},
+    {
+        id: 'b7',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35458.jpg',
+        description: 'В книге "Беспорядка" Зауголная ведет читателя в мир интриг и загадок, где ничто не является таким, каким кажется. Главный герой оказывается втянутым в смертельную игру, где каждый ход может оказаться последним.'
+,link:'book/Zaugolnaya_Oksana_Bes_poryadka.epub'},
+{
+        id: 'b8',
+        img: 'https://www.fantasy-worlds.net/img/preview/354/35455.jpg',
+        description: 'В романе "Рубин" Рэй рассказывает о тайнах прошлого и стремлениях главного героя. Он ищет ответы на вопросы, которые могут изменить его жизнь, и встречает людей, которые помогают ему найти свой путь.',
+        link: 'book/rubin.epub'
+    },
+{
+        id: "b9",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35452.jpg",
+        description: "В книге 'Клитемнестра' Казати создает захватывающий портрет героини из греческих мифов. Читатель встречает Клитемнестру в новом свете, где ее деяния и судьба раскрываются перед ними с новой глубиной."
+,link:'book/Kazati_Kostantsa_Klitemnestra.epub'},
+    {
+        id: "b10",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35449.jpg",
+        description: "В романе 'Побег из Нервиона, возвращение в Нервион' Дилэни рассказывает о приключениях главного героя, который пытается найти свое место в мире и понять свою судьбу. Его путь наполнен опасностями и открытиями, которые помогают ему найти истину."
+,link:'book/Dileni_Semyuel_[Vozvraschenie_v_Neverion]_Pobeg_iz_Neveriona__Vozvraschenie_v_Neverion_(sbornik).epub'},
+    {
+        id: "b11",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35446.jpg",
+        description: "В книге 'Последняя секунда вселенной' Веенер ведет читателя в увлекательное путешествие через время и пространство. Главный герой сталкивается с загадками космоса и собственного сознания, пытаясь понять истину о своем мире."
+,link:'book/Vesper_Alisa_Poslednyaya_sekunda_Vselennoy.epub'},
+    {
+        id: "b12",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35443.jpg",
+        description: "В романе 'Любовь серого оттенка' Инспирати создает захватывающую историю о любви и предательстве. Главные герои оказываются втянутыми в судьбоносные события, которые изменят их жизни навсегда."
+,link:'book/Klyatva_dannaya_tme.epub'},
+    {
+        id: "b13",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35440.jpg",
+        description: "В книге 'Чернокнижец' Гаглоев рассказывает о приключениях главного героя, который оказывается втянутым в борьбу с темными силами. Его путь наполнен опасностями и загадками, которые помогут ему стать настоящим героем."
+,link:'book/Zerkalnyie_vrata_teney.epub'},
+    {
+        id: "b14",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35437.jpg",
+        description: "В романе 'Варенье наизнанку и максимум козы!'  Смирнов создает яркий и веселый мир, где главный герой попадает в самые невероятные ситуации. Его приключения наполнены юмором и неожиданными поворотами."
+,link:'book/Varene_naiznanku_i_maksimum_kozyi.epub'},
+    {
+        id: "b15",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35434.jpg",
+        description: "В книге 'Без мозгов' Иванова-Неверова рассказывает о жизни главной героини, которая сталкивается с трудностями и испытаниями. Ее путь наполнен вызовами и препятствиями, которые помогут ей найти свое место в мире."
+,link:'book/Ivanova-Neverova_Oksana_Bez_mozgov.epub'},
+    {
+        id: "b16",
+        img: "https://www.fantasy-worlds.net/img/preview/354/35431.jpg",
+        description: "В романе 'Ведьмы поместья Муншайн' читатель окунется в мир волшебства и загадок. Главные героини оказываются втянутыми в схватку между светлыми и темными силами, где каждое решение может определить судьбу их мира."
+        ,link:'book/Marais_Byanka_Vedmyi_pomestya_Munshayn.epub'},
+
+    
+];
+
+books.forEach(book => {
+    document.querySelector(`#${book.id}`).addEventListener('click', function() {
+        const newWindow = window.open("", "_blank");
+        const doc = newWindow.document;
+
+        doc.write(`
+            <!DOCTYPE html>
+            <html lang="ru">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>${book.title}</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 20px;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    p {
+                        max-width: 600px;
+                        text-align: justify;
+                    }
+                    button {
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                </style>
+            </head>
+            <body>
+                <img src="${book.img}" alt="${book.title}">
+<p>${book.description}</p>
+<a href="${book.link}" download>Скачать книгу</a>
+<button onclick="window.close()">Назад к списку книг</button>
+            </body>
+            </html>
+        `);
+        doc.close();
+    });
+});
+</script>
 </body>
 </html>
 
